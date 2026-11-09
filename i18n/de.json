@@ -1,0 +1,148 @@
+{
+  "meta": { "title": "Das Geschlecht Narozhnyi", "subtitle": "Stammbaum einer Familie aus dem Dorf Saliman" },
+  "ui": {
+    "nav_tree": "Stammbaum", "nav_porfiry": "Porfyrij", "nav_daniil": "Daniil", "nav_zaliman": "Saliman", "nav_gerb": "Wappen", "nav_sources": "Quellen",
+    "theme": "Design wechseln", "language": "Sprache", "loading": "Das Archiv wird geöffnet…",
+    "zoom_in": "Vergrößern", "zoom_out": "Verkleinern", "fit": "Ganzen Stammbaum zeigen", "tree_hint": "Karte antippen, um die Biografie zu öffnen",
+    "legend_lines": "Familiennamen", "legend_status": "Verlässlichkeit", "legend_dashed": "gestrichelt: Verwandtschaft nicht belegt",
+    "close": "Schließen", "prev": "Zurück", "next": "Weiter",
+    "bio": "Biografie", "facts": "Fakten", "evidence": "Belege", "relatives": "Verwandte", "open_story": "Geschichte öffnen",
+    "no_docs": "Zu dieser Karte wurden noch keine Scans hinzugefügt.", "living_note": "Angaben zu lebenden Verwandten werden auf dieser Website nicht veröffentlicht.",
+    "doc_pending": "Dokument folgt", "translation": "Übersetzung", "back_to_tree": "Zum Stammbaum",
+    "rel_father": "Vater", "rel_mother": "Mutter", "rel_possible": "möglicher Vater", "rel_spouse": "Ehepartner", "rel_child": "Kind", "rel_sibling": "Geschwister",
+    "exhibit": "Exponat", "family_section": "Familie", "footer": "Familienarchiv. Angaben zu lebenden Personen beschränken sich auf Name und Verwandtschaft."
+  },
+  "lines": { "narozhny": "Narozhnyi", "orlov": "Orlow", "teslenko": "Teslenko", "yudkalo": "Judkalo", "berezhny": "Bereschnoi", "bondarenko": "Bondarenko" },
+  "status": { "confirmed": "Durch Dokument belegt", "family": "Nach Angaben der Familie", "probable": "Wahrscheinlich, noch zu prüfen" },
+  "people": {
+    "anton": { "name": "Anton Andrejewitsch Narozhnyi", "role": "Verfasser des Stammbaums" },
+    "andrey_n": { "name": "Andrej Narozhnyi", "role": "Vater" },
+    "mother_t": { "name": "Mutter (geb. Teslenko)", "role": "Mutter" },
+    "anatoly_o": { "name": "Anatoli Orlow", "role": "Großvater väterlicherseits" },
+    "galina": { "name": "Galina Dmitrijewna Narozhna", "role": "Großmutter väterlicherseits" },
+    "viktor": { "name": "Viktor Andrejewitsch Teslenko", "role": "Großvater mütterlicherseits" },
+    "anna_b": { "name": "Anna Nikolajewna Bereschnaja", "role": "Großmutter mütterlicherseits" },
+
+    "dmitry": { "name": "Dmitri Narozhnyi", "place": "Saliman", "role": "Urgroßvater", "bio": "Vater von Galina Dmitrijewna, bekannt aus Erzählungen der Familie. Sein Vatersname ist noch nicht ermittelt; erst er wird zeigen, zu welchem Zweig der Narozhnyis aus Saliman er gehörte.", "facts": [ { "t": "Sein Vater könnte Iwan Iwanowitsch oder Afanassi Iwanowitsch Narozhnyi sein. Der Vatersname muss noch bei Verwandten erfragt werden.", "s": "probable" } ] },
+    "matrona_e": { "name": "Matrjona Jelissejewna Narozhna", "role": "Urgroßmutter", "bio": "Ehefrau von Dmitri Narozhnyi und Mutter von Galina Dmitrijewna, bekannt aus Erzählungen der Familie." },
+
+    "ivan_n": { "name": "Iwan Iwanowitsch Narozhnyi", "place": "Saliman", "role": "möglicher Vorfahr", "bio": "Einwohner von Saliman, bekannt aus den Kirchenbüchern. Eine Verbindung zu Dmitri Narozhnyi ist noch nicht belegt.", "facts": [ "Ehefrau: Fjokla, in den Einträgen Ioannowna oder Rodionowna.", "Sohn Timofej, 3.01.1904: DAChO 40-139-228.", "Sohn Pawel, 2.06.1919: DAChO 40-139-372, Eintrag Nr. 27.", { "t": "Verwandtschaft mit Dmitri Narozhnyi.", "s": "probable" } ] },
+    "fekla": { "name": "Fjokla Narozhna", "place": "Saliman", "role": "Ehefrau von Iwan Iwanowitsch", "bio": "Ihr Vatersname steht in den Kirchenbüchern in zwei Formen: Ioannowna und Rodionowna." },
+    "timofey": { "name": "Timofej Iwanowitsch Narozhnyi", "years": "geb. 3.01.1904", "place": "Saliman", "role": "Sohn von Iwan Iwanowitsch", "facts": [ "Kirchenbuch: DAChO 40-139-228." ] },
+    "pavel": { "name": "Pawel Iwanowitsch Narozhnyi", "years": "geb. 2.06.1919", "place": "Saliman", "role": "Sohn von Iwan Iwanowitsch", "facts": [ "Kirchenbuch: DAChO 40-139-372, Eintrag Nr. 27." ] },
+    "afanasy_n": { "name": "Afanassi Iwanowitsch Narozhnyi", "years": "geb. 1897", "place": "Saliman", "role": "möglicher Vorfahr", "bio": "Einwohner von Saliman und Soldat im Zweiten Weltkrieg. Eine Verbindung zu Dmitri Narozhnyi ist noch nicht belegt.", "facts": [ "1918 Bürge bei der Hochzeit von Jakow Mitrofanowitsch Bereschnoi.", "Im Oktober 1941 vom Wehrkreiskommando Sawinzy einberufen.", "13. Reserve-Schützenbrigade, 92. Reserve-Schützenregiment (Orsk). Quelle: Pamjat Naroda.", { "t": "Verwandtschaft mit Dmitri Narozhnyi.", "s": "probable" } ] },
+    "domna": { "name": "Domna Petrowna Narozhna", "place": "Saliman", "role": "Ehefrau von Afanassi Iwanowitsch" },
+    "mikhail": { "name": "Michail Afanassjewitsch Narozhnyi", "years": "geb. 2.11.1919", "place": "Saliman", "role": "Sohn von Afanassi Iwanowitsch", "facts": [ "Eintrag Nr. 55. Taufpatin: die Ehefrau von Wassili Kosminy Bereschnoi." ] },
+
+    "andrey_d": { "name": "Andrej Danilowitsch Teslenko", "place": "Lipzy bei Charkiw", "role": "Urgroßvater", "bio": "Geboren im Dorf Lipzy bei Charkiw; Vater von Viktor Andrejewitsch.", "facts": [ { "t": "Bruder: Stepan.", "s": "family" }, { "t": "Wahrscheinlich der Rotarmist Andrej Danilowitsch Teslenko, geb. 1912, einberufen vom Wehrkreiskommando Sawinzy: 38. Bataillon, Lazarett Nr. 1248 (Mai–Juni 1943). Quelle: Pamjat Naroda.", "s": "probable" } ] },
+    "stepan_t": { "name": "Stepan Teslenko", "role": "Bruder von Andrej Danilowitsch", "bio": "Bekannt aus Erzählungen der Familie." },
+    "daniil_t": { "name": "Daniil Teslenko", "role": "Ururgroßvater", "bio": "Vater von Andrej und Stepan, bekannt aus Erzählungen der Familie." },
+
+    "palageya": { "name": "Palageja Filippowna Judkalo", "role": "Urgroßmutter", "bio": "Ehefrau von Andrej Danilowitsch Teslenko; Tochter von Filipp und Marina." },
+    "kirill": { "name": "Kirill Filippowitsch Jutkalo (Judkalo)", "years": "1911 – 5.07.1944", "place": "Saliman", "role": "Rotarmist, gefallen in Karelien", "bio": "Soldat der 69. Schützenbrigade. Gefallen am 5. Juli 1944 in Karelien beim Dorf Essoila, bestattet in einem Massengrab in Prjascha.", "facts": [ { "t": "Dienst und Tod: Pamjat Naroda.", "s": "confirmed" }, { "t": "Fast sicher der Bruder von Palageja Filippowna. Ein direkter Beleg der Verwandtschaft fehlt noch.", "s": "probable" } ] },
+    "filipp": { "name": "Filipp Judkalo", "role": "Ururgroßvater", "bio": "Vater von Palageja Filippowna, bekannt aus Erzählungen der Familie." },
+    "marina": { "name": "Marina Judkalo", "role": "Ururgroßmutter", "bio": "Mutter von Palageja Filippowna, bekannt aus Erzählungen der Familie." },
+
+    "nikolai_b": { "name": "Nikolai Ostapowitsch Bereschnoi", "years": "geb. 1917", "place": "Saliman; später Zimljansk", "role": "Urgroßvater, Flakartillerist", "bio": "Geboren in Saliman. Er diente im 1342. Flakartillerieregiment, einberufen vom Wehrkreiskommando Balaklija, und lebte später in Zimljansk im Gebiet Rostow. Ehemann von Anastassija Porfirjewna Bondarenko.", "facts": [ "Orden des Vaterländischen Krieges II. Klasse (Jubiläumsverleihung 1985).", "Quelle: Pamjat Naroda. Identität bestätigt von der Mutter des Verfassers." ] },
+
+    "anastasia": { "name": "Anastassija Porfirjewna Bondarenko", "years": "geb. 13.04.1918", "place": "Saliman", "role": "Urgroßmutter", "bio": "Tochter des Georgsritters Porfyrij Bondarenko. Geboren und getauft am 13. April 1918 in Saliman. Sie heiratete Nikolai Ostapowitsch Bereschnoi.", "facts": [ "Kirchenbucheintrag Nr. 16: DAChO 40-139-372.", "Tochter: Anna Nikolajewna Bereschnaja." ] },
+    "twin_andrey": { "name": "Andrej Porfirjewitsch Bondarenko", "years": "30.11. – Dez. 1919", "place": "Saliman", "role": "Zwilling, als Säugling gestorben", "bio": "Geboren am 30. November 1919 zusammen mit seinem Bruder Afanassi; er lebte zwei Tage.", "facts": [ "Geburtseinträge Nr. 62–63 und Sterbeeintrag: DAChO 40-139-372." ] },
+    "twin_afanasy": { "name": "Afanassi Porfirjewitsch Bondarenko", "years": "geb. 30.11.1919", "place": "Saliman", "role": "Zwilling", "bio": "Geboren am 30. November 1919 zusammen mit seinem Bruder Andrej. Sein weiteres Schicksal ist unbekannt.", "facts": [ "Geburtseinträge Nr. 62–63: DAChO 40-139-372." ] },
+    "daniil_b": { "name": "Daniil Porfirjewitsch Bondarenko", "years": "geb. 21.12.1921", "place": "Saliman", "role": "Oberst, Urgroßonkel", "bio": "Sohn von Porfyrij Bondarenko und Berufsoffizier. Er kämpfte im sowjetisch-finnischen Krieg und im Zweiten Weltkrieg und beendete seinen Dienst als Oberst.", "facts": [ "Einberufen am 9.12.1939; Teilnehmer des sowjetisch-finnischen Krieges 1939–1940.", "81. Schützenregiment, 54. Schützendivision; Operative Gruppe Kem, Karelische Front.", "Major, Erster Gehilfe des Leiters der Abteilung für die Auswertung der Kriegserfahrung, Operationsabteilung im Stab der 26. Armee.", "Leutnant → Oberleutnant → Hauptmann → Major → Oberst.", "Orden des Vaterländischen Krieges II. und I. Klasse; Medaille „Für den Sieg über Deutschland“.", { "t": "Er diente in Kyjiw, kannte Fidel Castro und schenkte ihm zwei Papageien.", "s": "family" } ] },
+    "evgeny": { "name": "Jewgeni Daniilowitsch Bondarenko", "place": "Charkiw", "role": "Leiter des Zivilschutzes", "bio": "Sohn von Daniil Porfirjewitsch. Nach Angaben der Familie leitete er den Zivilschutz von Charkiw und des Gebiets Charkiw." },
+    "zinaida": { "name": "Sinaida Bondarenko", "role": "Tochter von Daniil Porfirjewitsch" },
+
+    "porfiry": { "name": "Porfyrij Wlassowitsch Bondarenko", "years": "erw. 1916–1919", "place": "Saliman, Wolost Sawinzy", "role": "Ururgroßvater, Georgsritter", "bio": "Grenadier des 12. Astrachaner Grenadierregiments Kaiser Alexanders III.; orthodox, verheiratet, aus dem Dorf Saliman im Kreis Isjum, Gouvernement Charkow. Im September 1916 wurde er bei Saturzy in Wolhynien verwundet, im November erhielt er das Georgskreuz IV. Klasse Nr. 734616.", "facts": [ "Verwundet am 21.09.1916 bei Saturzy; evakuiert über die Verbandsstelle der Moskauer Börsen- und Kaufmannsgesellschaften.", "Georgskreuz IV. Klasse Nr. 734616, verliehen am 16.11.1916 bei einer Truppenschau.", { "t": "Das Kreuz überreichte Großfürst Georgi Michailowitsch:", "q": "от Имени Государя Императора", "tr": "im Namen Seiner Majestät des Kaisers" }, "Die Verleihung verzeichnet auch S. B. Patrikejew in den Sammellisten der Träger des Georgskreuzes 1914–1922, Bd. 11.", { "t": "Familienüberlieferung: „ein goldenes Kreuz, vom Zaren selbst“; er soll gehinkt oder ein Bein verloren haben. Das Kreuz IV. Klasse war aus Silber, überreicht wurde es aber tatsächlich von einem Mitglied des Kaiserhauses im Namen des Zaren. Die Überlieferung ist also fast genau.", "s": "family" } ] },
+    "maria": { "name": "Marija Simeonowna Bondarenko", "place": "Saliman", "role": "Ururgroßmutter", "bio": "Ehefrau von Porfyrij Wlassowitsch; Mutter von Anastassija, Andrej, Afanassi und Daniil." },
+    "ksenia": { "name": "Xenia Wlassowna Bondarenko", "years": "geb. 27.01.1903", "place": "Saliman", "role": "Tochter von Wlas Saweljewitsch", "facts": [ "Kirchenbucheintrag Nr. 7: DAChO F. 40, Op. 139, Spr. 228." ] },
+    "matrona_v": { "name": "Matrona Wlassowna Bondarenko", "years": "erw. 1919", "place": "Saliman", "role": "Tochter von Wlas Saweljewitsch", "bio": "In einem Eintrag von 1919 als Taufpatin genannt.", "facts": [ { "t": "Eintrag im Kirchenbuch:", "q": "Власа Савелиева дочь девица Матрона", "tr": "Wlas Saweljews Tochter, die Jungfer Matrona" } ] },
+    "vlas": { "name": "Wlas Saweljewitsch Bondarenko", "years": "erw. 1903", "place": "Saliman", "role": "Urururgroßvater, Reservist", "bio": "Vater des Georgsritters. Das Kirchenbuch von 1903 führt ihn als Gemeinen, also als Soldaten der Reserve.", "facts": [ { "t": "Eintrag von 1903:", "q": "села Залимана рядовой", "tr": "Gemeiner aus dem Dorf Saliman" }, "Ehefrau: Darja Fjodorowna. Bruder: Jewgraf Saweljewitsch, ebenfalls Gemeiner.", "Geburt der Tochter Xenia: Eintrag Nr. 7, 27.01.1903, DAChO F. 40, Op. 139, Spr. 228." ] },
+    "daria": { "name": "Darja Fjodorowna Bondarenko", "years": "erw. 1903", "place": "Saliman", "role": "Urururgroßmutter", "bio": "Ehefrau von Wlas Saweljewitsch, genannt in einem Kirchenbucheintrag von 1903." },
+    "evgraf": { "name": "Jewgraf Saweljewitsch Bondarenko", "years": "erw. 1903", "place": "Saliman", "role": "Bruder von Wlas, Gemeiner", "bio": "Wie sein Bruder wird er in den Dokumenten von 1903 als Gemeiner bezeichnet." },
+    "savely": { "name": "Sawelij Bondarenko", "years": "ca. 1830er–40er", "place": "Saliman", "role": "frühester bekannter Vorfahr", "bio": "Vater von Wlas und Jewgraf, bekannt durch deren Vatersnamen.", "facts": [ { "t": "Seine Lebensdaten sind nur ungefähr bestimmt.", "s": "probable" } ] }
+  },
+  "docs": {
+    "porfiry_nagrada": { "title": "Auszeichnungsliste des 12. Astrachaner Grenadierregiments", "shelfmark": "RGWIA, F. 970 (Militärische Feldkanzlei S. K. M.)" },
+    "porfiry_ranenie": { "title": "Karte des Verlustbüros: Verwundung am 21.09.1916", "shelfmark": "Kartei des Verlustbüros, Portal „Helden des Großen Krieges“" },
+    "vlas_1903": { "title": "Kirchenbuch: Geburt von Xenia, 27.01.1903, Nr. 7", "shelfmark": "DAChO, F. 40, Op. 139, Spr. 228" },
+    "anastasia_1918": { "title": "Kirchenbuch: Geburt von Anastassija, 13.04.1918, Nr. 16", "shelfmark": "DAChO, F. 40, Op. 139, Spr. 372" },
+    "bliznecy_1919": { "title": "Kirchenbuch: Geburt der Zwillinge, 30.11.1919, Nr. 62–63", "shelfmark": "DAChO, F. 40, Op. 139, Spr. 372" },
+    "smert_andrey_1919": { "title": "Kirchenbuch: Tod des Säuglings Andrej, Dezember 1919", "shelfmark": "DAChO, F. 40, Op. 139, Spr. 372" },
+    "daniil_foto": { "title": "Daniil Porfirjewitsch Bondarenko. Fotografie", "shelfmark": "Familienarchiv; bestätigt von der Mutter des Verfassers" },
+    "daniil_nagradnoy": { "title": "Auszeichnungsblatt vom 9.10.1944: Orden des Vaterländischen Krieges II. Klasse", "shelfmark": "Pamjat Naroda" },
+    "berezhnoy_spisok": { "title": "N. O. Bereschnoi: Liste des 1342. Flakartillerieregiments", "shelfmark": "Pamjat Naroda" },
+    "berezhnoy_orden": { "title": "N. O. Bereschnoi: Orden des Vaterländischen Krieges II. Klasse, 1985", "shelfmark": "Pamjat Naroda" },
+    "gerb": { "title": "Familienwappen", "shelfmark": "Modernes Familienemblem" }
+  },
+  "stories": {
+    "porfiry": {
+      "kicker": "Ausstellung I", "title": "Porfyrij Bondarenko", "subtitle": "Georgsritter aus dem Dorf Saliman",
+      "plaque": [ { "k": "Auszeichnung", "v": "Georgskreuz IV. Klasse" }, { "k": "Nummer", "v": "Nr. 734616" }, { "k": "Verliehen", "v": "16.11.1916" } ],
+      "sections": [
+        { "year": "1903", "heading": "Sohn eines Reservisten", "text": "Das Kirchenbuch von Saliman nennt seinen Vater Wlas Saweljewitsch einen Gemeinen. Der Dienst gehörte schon zum Leben dieser Familie: Auch Porfyrijs Onkel Jewgraf ist als Gemeiner verzeichnet.", "quote": { "q": "села Залимана рядовой", "tr": "Gemeiner aus dem Dorf Saliman" }, "doc": "vlas_1903" },
+        { "year": "1916", "heading": "Grenadier des Astrachaner Regiments", "text": "Porfyrij dient im 12. Astrachaner Grenadierregiment Kaiser Alexanders III. Die Akten beschreiben ihn knapp: orthodox, verheiratet, Gouvernement Charkow, Kreis Isjum, Wolost Sawinzy, Dorf Saliman." },
+        { "year": "21.09.1916", "heading": "Verwundet bei Saturzy", "text": "In Wolhynien, beim Dorf Saturzy, wird der Grenadier verwundet. Er wird über die Verbandsstelle der Moskauer Börsen- und Kaufmannsgesellschaften evakuiert; davon zeugt eine Karte des Verlustbüros.", "doc": "porfiry_ranenie" },
+        { "year": "16.11.1916", "heading": "Kreuz Nr. 734616", "text": "Als besonders Ausgezeichneter erhält Porfyrij bei einer Truppenschau das Georgskreuz IV. Klasse. Überreicht wird es von Großfürst Georgi Michailowitsch. Die Verleihung ist in der Regimentsliste und in den Sammellisten von S. B. Patrikejew erhalten.", "quote": { "q": "от Имени Государя Императора", "tr": "im Namen Seiner Majestät des Kaisers" }, "doc": "porfiry_nagrada" },
+        { "year": "Überlieferung", "kind": "legend", "heading": "„Ein goldenes Kreuz, vom Zaren selbst“", "text": "In der Familie hieß es, das Kreuz sei aus Gold gewesen und vom Zaren selbst gekommen, und Porfyrij habe gehinkt oder ein Bein verloren. Das Kreuz IV. Klasse war aus Silber, doch überreicht wurde es tatsächlich von einem Mitglied des Kaiserhauses im Namen des Zaren. Die Erinnerung der Familie war fast genau." },
+        { "year": "1918–1921", "heading": "Zu Hause in Saliman", "text": "Mit Marija Simeonowna zieht er in seinem Heimatdorf die Kinder groß. 1918 wird Anastassija geboren, 1919 die Zwillinge Andrej und Afanassi; Andrej stirbt zwei Tage alt. 1921 kommt Daniil zur Welt, der spätere Oberst.", "doc": "anastasia_1918" }
+      ],
+      "family": [ "maria", "anastasia", "twin_andrey", "twin_afanasy", "daniil_b", "vlas" ]
+    },
+    "daniil": {
+      "kicker": "Ausstellung II", "title": "Daniil Bondarenko", "subtitle": "Oberst, Sohn eines Georgsritters",
+      "photo": "daniil_foto",
+      "plaque": [ { "k": "Geboren", "v": "21.12.1921, Saliman" }, { "k": "Im Dienst", "v": "seit 9.12.1939" }, { "k": "Rang", "v": "Oberst" } ],
+      "ladder_title": "Der Weg durch die Ränge", "ladder": [ "Leutnant", "Oberleutnant", "Hauptmann", "Major", "Oberst" ],
+      "sections": [
+        { "year": "1939–1940", "heading": "Der erste Krieg", "text": "Am 9. Dezember 1939, kurz vor seinem achtzehnten Geburtstag, wird der Sohn des Georgsritters einberufen und nimmt am sowjetisch-finnischen Krieg teil." },
+        { "year": "Bis 1944", "heading": "Die Karelische Front", "text": "81. Schützenregiment der 54. Schützendivision, dann die Operative Gruppe Kem der Karelischen Front. 1944 ist er Major und Erster Gehilfe des Leiters der Abteilung für die Auswertung der Kriegserfahrung in der Operationsabteilung im Stab der 26. Armee." },
+        { "year": "9.10.1944", "heading": "Das Auszeichnungsblatt", "text": "Orden des Vaterländischen Krieges II. Klasse. Mit einer Funkstation bei Einheiten der 205. Schützendivision sicherte er dem Armeeoberbefehlshaber die Truppenführung bei der Verfolgung des Gegners in Richtung Kestenga; außerdem war er operativer Diensthabender und wertete Kampferfahrungen aus.", "doc": "daniil_nagradnoy" },
+        { "year": "Auszeichnungen", "heading": "Zwei Orden und eine Medaille", "text": "Orden des Vaterländischen Krieges II. Klasse, Orden des Vaterländischen Krieges I. Klasse und die Medaille „Für den Sieg über Deutschland“." },
+        { "year": "Überlieferung", "kind": "legend", "heading": "Zwei Papageien für Fidel", "text": "In der Familie erzählt man, Daniil habe in Kyjiw gedient, Fidel Castro gekannt und ihm zwei Papageien geschenkt. Castro war tatsächlich im Mai 1963 und im Januar 1964 in Kyjiw; die Begegnung selbst ist noch nicht dokumentiert." },
+        { "year": "Nachkommen", "heading": "Die Linie des Dienstes geht weiter", "text": "Nach Angaben der Familie wurde sein Sohn Jewgeni Leiter des Zivilschutzes von Charkiw und des Gebiets Charkiw. Ein Grenadier von 1916, ein Oberst, ein Leiter des Zivilschutzes: drei Generationen im Dienst." }
+      ],
+      "family": [ "porfiry", "anastasia", "evgeny", "zinaida" ]
+    }
+  },
+  "zaliman": {
+    "title": "Saliman", "subtitle": "Die Heimat der Familie am Siwerskyj Donez",
+    "facts": [ { "k": "Gegründet", "v": "um 1671" }, { "k": "Bewohner", "v": "Staatsbauern" }, { "k": "Kreis", "v": "Isjum, Gouvernement Charkow" }, { "k": "Wolost", "v": "Sawinzy" } ],
+    "paragraphs": [
+      "Saliman wurde um 1671 am Ufer des Siwerskyj Donez gegenüber von Sawinzy gegründet. Seine Bewohner waren Staatsbauern des Kreises Isjum im Gouvernement Charkow.",
+      "Später gehörte das Dorf zum Rajon Balaklija und dann zum Rajon Isjum im Gebiet Charkiw. In denselben Kirchenbüchern stehen hier die Narozhnyis, Bereschnois und Bondarenkos nebeneinander."
+    ],
+    "estate_title": "Stand",
+    "estate_text": "In Dokumenten von 1903 sind die Einwohner von Saliman Staatsbauern, 1918–1919 Bauern der Sloboda Saliman. Adlige Wurzeln wurden nicht festgestellt.",
+    "estate_quote": { "q": "слободы Залимана крестьяне", "tr": "Bauern der Sloboda Saliman" },
+    "dynasty_title": "Die Stärke der Familie ist der Dienst",
+    "dynasty": [ { "k": "1916", "v": "Grenadier, Georgsritter" }, { "k": "1939–", "v": "Berufsoffizier, Oberst" }, { "k": "Später", "v": "Leiter des Zivilschutzes" } ]
+  },
+  "gerb": {
+    "title": "Wappen", "motto": "Ad maiora natus", "motto_translation": "Zu Größerem geboren",
+    "symbols_title": "Die Symbole",
+    "symbols": [
+      { "k": "Blauer Schild", "v": "Das Wappenfeld." },
+      { "k": "Silbernes Rapier", "v": "Mit der Spitze nach oben: Zeichen des Militärdienstes der Familie." },
+      { "k": "Goldenes Medaillon mit schwarzem Tatzenkreuz", "v": "In der Mitte des Korbs, zum Gedenken an den Georgsritter Porfyrij." },
+      { "k": "Goldene Sonne", "v": "Über der Klinge." },
+      { "k": "Grüner Hügel", "v": "Am Schildfuß: die Heimaterde der Sloboda-Ukraine." },
+      { "k": "Turnierhelm", "v": "Krönt den Schild." },
+      { "k": "Helmdecke", "v": "Rechts blau-silbern, links schwarz-golden: die Georgsfarben." },
+      { "k": "Helmzier", "v": "Zwei Flügel, blau und golden." }
+    ]
+  },
+  "sources": {
+    "title": "Quellen", "subtitle": "Archive, Publikationen und Dokumente",
+    "list_title": "Archive und Signaturen",
+    "list": [
+      { "k": "DAChO (Staatsarchiv des Gebiets Charkiw)", "v": "F. 40, Op. 139, Spr. 228: Kirchenbuch von Saliman 1903–1906; Spr. 372: 1918–1919. Kopien auf Wikimedia Commons." },
+      { "k": "RGWIA (Russisches Staatliches Militärhistorisches Archiv)", "v": "F. 970; F. 409, über das Portal „Helden des Großen Krieges“." },
+      { "k": "S. B. Patrikejew", "v": "Sammellisten der Träger des Georgskreuzes 1914–1922, Bd. 11 (IV. Klasse, Nr. 700001–800000)." },
+      { "k": "Pamjat Naroda („Gedächtnis des Volkes“)", "v": "Öffentliche Datenbank mit Dokumenten zum Krieg 1941–1945." },
+      { "k": "Revision der „Tscherkassen“ des Kreises Isjum, 1782", "v": "DAChO, F. 31, Op. 141, Spr. 18." }
+    ],
+    "gallery_title": "Alle Dokumente",
+    "namesake_title": "Ein Namensvetter",
+    "namesake": "Fähnrich Gawriil Maximowitsch Teslenko, 6. Finnländisches Schützenregiment, gefallen am 7.09.1915 bei Sadworniki, postum mit dem St.-Georgs-Orden IV. Klasse ausgezeichnet (Höchster Befehl vom 10.06.1916). Eine Verwandtschaft ist nicht festgestellt."
+  }
+}

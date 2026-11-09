@@ -1,0 +1,148 @@
+{
+  "meta": { "title": "The Narozhnyi Family", "subtitle": "A family tree from the village of Zaliman" },
+  "ui": {
+    "nav_tree": "Tree", "nav_porfiry": "Porfiry", "nav_daniil": "Daniil", "nav_zaliman": "Zaliman", "nav_gerb": "Coat of arms", "nav_sources": "Sources",
+    "theme": "Change theme", "language": "Language", "loading": "Opening the archive…",
+    "zoom_in": "Zoom in", "zoom_out": "Zoom out", "fit": "Show the whole tree", "tree_hint": "Tap a card to open the biography",
+    "legend_lines": "Family names", "legend_status": "Reliability", "legend_dashed": "dashed line: kinship not proven",
+    "close": "Close", "prev": "Previous", "next": "Next",
+    "bio": "Biography", "facts": "Facts", "evidence": "Evidence", "relatives": "Relatives", "open_story": "Open the story",
+    "no_docs": "No scans have been added to this card yet.", "living_note": "Details of living relatives are not published on this site.",
+    "doc_pending": "document to be added", "translation": "Translation", "back_to_tree": "Back to the tree",
+    "rel_father": "father", "rel_mother": "mother", "rel_possible": "possible father", "rel_spouse": "spouse", "rel_child": "child", "rel_sibling": "sibling",
+    "exhibit": "Exhibit", "family_section": "Family", "footer": "Family archive. Information on living people is limited to name and relationship."
+  },
+  "lines": { "narozhny": "Narozhnyi", "orlov": "Orlov", "teslenko": "Teslenko", "yudkalo": "Yudkalo", "berezhny": "Berezhnoy", "bondarenko": "Bondarenko" },
+  "status": { "confirmed": "Confirmed by a document", "family": "According to the family", "probable": "Probable, needs checking" },
+  "people": {
+    "anton": { "name": "Anton Andreevich Narozhnyi", "role": "compiler of the tree" },
+    "andrey_n": { "name": "Andrey Narozhnyi", "role": "father" },
+    "mother_t": { "name": "Mother (née Teslenko)", "role": "mother" },
+    "anatoly_o": { "name": "Anatoly Orlov", "role": "paternal grandfather" },
+    "galina": { "name": "Galina Dmitrievna Narozhna", "role": "paternal grandmother" },
+    "viktor": { "name": "Viktor Andreevich Teslenko", "role": "maternal grandfather" },
+    "anna_b": { "name": "Anna Nikolaevna Berezhnaya", "role": "maternal grandmother" },
+
+    "dmitry": { "name": "Dmitry Narozhnyi", "place": "Zaliman", "role": "great-grandfather", "bio": "Father of Galina Dmitrievna, known from family accounts. His patronymic has not yet been established, and it is what will show which branch of the Zaliman Narozhnyis he belonged to.", "facts": [ { "t": "His father may be Ivan Ivanovich or Afanasy Ivanovich Narozhnyi. The patronymic still needs to be confirmed with relatives.", "s": "probable" } ] },
+    "matrona_e": { "name": "Matryona Eliseevna Narozhna", "role": "great-grandmother", "bio": "Wife of Dmitry Narozhnyi and mother of Galina Dmitrievna, known from family accounts." },
+
+    "ivan_n": { "name": "Ivan Ivanovich Narozhnyi", "place": "Zaliman", "role": "possible ancestor", "bio": "A resident of Zaliman known from the parish registers. A link to Dmitry Narozhnyi has not yet been proven.", "facts": [ "Wife: Fekla, recorded as Ioannovna or Rodionovna.", "Son Timofey, 3 Jan 1904: DAKhO 40-139-228.", "Son Pavel, 2 Jun 1919: DAKhO 40-139-372, entry no. 27.", { "t": "Kinship with Dmitry Narozhnyi.", "s": "probable" } ] },
+    "fekla": { "name": "Fekla Narozhna", "place": "Zaliman", "role": "wife of Ivan Ivanovich", "bio": "The parish entries give her patronymic in two ways: Ioannovna and Rodionovna." },
+    "timofey": { "name": "Timofey Ivanovich Narozhnyi", "years": "b. 3 Jan 1904", "place": "Zaliman", "role": "son of Ivan Ivanovich", "facts": [ "Parish register: DAKhO 40-139-228." ] },
+    "pavel": { "name": "Pavel Ivanovich Narozhnyi", "years": "b. 2 Jun 1919", "place": "Zaliman", "role": "son of Ivan Ivanovich", "facts": [ "Parish register: DAKhO 40-139-372, entry no. 27." ] },
+    "afanasy_n": { "name": "Afanasy Ivanovich Narozhnyi", "years": "b. 1897", "place": "Zaliman", "role": "possible ancestor", "bio": "A resident of Zaliman who served in the Second World War. A link to Dmitry Narozhnyi has not yet been proven.", "facts": [ "In 1918 he stood as guarantor at the wedding of Yakov Mitrofanovich Berezhnoy.", "Drafted by the Savintsy military office in October 1941.", "13th Reserve Rifle Brigade, 92nd Reserve Rifle Regiment (Orsk). Source: Pamyat Naroda.", { "t": "Kinship with Dmitry Narozhnyi.", "s": "probable" } ] },
+    "domna": { "name": "Domna Petrovna Narozhna", "place": "Zaliman", "role": "wife of Afanasy Ivanovich" },
+    "mikhail": { "name": "Mikhail Afanasyevich Narozhnyi", "years": "b. 2 Nov 1919", "place": "Zaliman", "role": "son of Afanasy Ivanovich", "facts": [ "Entry no. 55. Godmother: the wife of Vasily Kosminy Berezhnoy." ] },
+
+    "andrey_d": { "name": "Andrey Danilovich Teslenko", "place": "Liptsy, near Kharkiv", "role": "great-grandfather", "bio": "Born in the village of Liptsy near Kharkiv; father of Viktor Andreevich.", "facts": [ { "t": "Brother: Stepan.", "s": "family" }, { "t": "Probably the Red Army soldier Andrey Danilovich Teslenko, born 1912, drafted by the Savintsy military office: 38th battalion, Hospital No. 1248 (May–June 1943). Source: Pamyat Naroda.", "s": "probable" } ] },
+    "stepan_t": { "name": "Stepan Teslenko", "role": "brother of Andrey Danilovich", "bio": "Known from family accounts." },
+    "daniil_t": { "name": "Daniil Teslenko", "role": "great-great-grandfather", "bio": "Father of Andrey and Stepan, known from family accounts." },
+
+    "palageya": { "name": "Palageya Filippovna Yudkalo", "role": "great-grandmother", "bio": "Wife of Andrey Danilovich Teslenko; daughter of Filipp and Marina." },
+    "kirill": { "name": "Kirill Filippovich Yutkalo (Yudkalo)", "years": "1911 – 5 Jul 1944", "place": "Zaliman", "role": "Red Army soldier, killed in Karelia", "bio": "Soldier of the 69th Rifle Brigade. Killed on 5 July 1944 in Karelia near the village of Essoila and buried in a mass grave at Pryazha.", "facts": [ { "t": "Service and death: Pamyat Naroda.", "s": "confirmed" }, { "t": "Almost certainly the brother of Palageya Filippovna. There is no direct document of the kinship yet.", "s": "probable" } ] },
+    "filipp": { "name": "Filipp Yudkalo", "role": "great-great-grandfather", "bio": "Father of Palageya Filippovna, known from family accounts." },
+    "marina": { "name": "Marina Yudkalo", "role": "great-great-grandmother", "bio": "Mother of Palageya Filippovna, known from family accounts." },
+
+    "nikolai_b": { "name": "Nikolai Ostapovich Berezhnoy", "years": "b. 1917", "place": "Zaliman; later Tsimlyansk", "role": "great-grandfather, anti-aircraft gunner", "bio": "Born in Zaliman. He served in the 1342nd Anti-Aircraft Artillery Regiment, drafted by the Balakliia military office, and later lived in Tsimlyansk, Rostov region. Husband of Anastasia Porfiryevna Bondarenko.", "facts": [ "Order of the Patriotic War, 2nd class (anniversary award, 1985).", "Source: Pamyat Naroda. Identity confirmed by the compiler's mother." ] },
+
+    "anastasia": { "name": "Anastasia Porfiryevna Bondarenko", "years": "b. 13 Apr 1918", "place": "Zaliman", "role": "great-grandmother", "bio": "Daughter of the St George cavalier Porfiry Bondarenko. Born and baptised on 13 April 1918 in Zaliman. She married Nikolai Ostapovich Berezhnoy.", "facts": [ "Parish entry no. 16: DAKhO 40-139-372.", "Daughter: Anna Nikolaevna Berezhnaya." ] },
+    "twin_andrey": { "name": "Andrey Porfiryevich Bondarenko", "years": "30 Nov – Dec 1919", "place": "Zaliman", "role": "twin, died in infancy", "bio": "Born on 30 November 1919 together with his brother Afanasy; he lived for two days.", "facts": [ "Birth entries nos. 62–63 and the death entry: DAKhO 40-139-372." ] },
+    "twin_afanasy": { "name": "Afanasy Porfiryevich Bondarenko", "years": "b. 30 Nov 1919", "place": "Zaliman", "role": "twin", "bio": "Born on 30 November 1919 together with his brother Andrey. His later life is unknown.", "facts": [ "Birth entries nos. 62–63: DAKhO 40-139-372." ] },
+    "daniil_b": { "name": "Daniil Porfiryevich Bondarenko", "years": "b. 21 Dec 1921", "place": "Zaliman", "role": "colonel, great-granduncle", "bio": "Son of Porfiry Bondarenko and a career officer. He fought in the Soviet-Finnish War and the Second World War and finished his service as a colonel.", "facts": [ "Drafted on 9 Dec 1939; took part in the Soviet-Finnish War of 1939–1940.", "81st Rifle Regiment, 54th Rifle Division; Kem Operational Group, Karelian Front.", "Major, senior assistant to the head of the section for applying war experience, operations department, 26th Army staff.", "Lieutenant → Senior Lieutenant → Captain → Major → Colonel.", "Order of the Patriotic War, 2nd and 1st class; Medal “For Victory over Germany”.", { "t": "He served in Kyiv, knew Fidel Castro and gave him two parrots.", "s": "family" } ] },
+    "evgeny": { "name": "Evgeny Daniilovich Bondarenko", "place": "Kharkiv", "role": "head of civil defence", "bio": "Son of Daniil Porfiryevich. According to the family, he was head of civil defence for Kharkiv and the Kharkiv region." },
+    "zinaida": { "name": "Zinaida Bondarenko", "role": "daughter of Daniil Porfiryevich" },
+
+    "porfiry": { "name": "Porfiry Vlasovich Bondarenko", "years": "recorded 1916–1919", "place": "Zaliman, Savintsy volost", "role": "great-great-grandfather, St George cavalier", "bio": "Grenadier of the 12th Astrakhan Grenadier Regiment of Emperor Alexander III; Orthodox, married, from the village of Zaliman, Izyum district, Kharkov Governorate. Wounded in September 1916 near Zaturtsy in Volhynia, in November he received the St George Cross, 4th class, No. 734616.", "facts": [ "Wounded on 21 Sep 1916 near Zaturtsy; evacuated through the dressing unit of the Moscow exchange and merchant societies.", "St George Cross, 4th class, No. 734616, awarded at a review on 16 Nov 1916.", { "t": "The cross was presented by Grand Duke George Mikhailovich:", "q": "от Имени Государя Императора", "tr": "in the name of His Majesty the Emperor" }, "The award is also recorded by S. B. Patrikeev in the consolidated lists of St George Cross holders, 1914–1922, vol. 11.", { "t": "Family tradition: “a gold cross, given by the Tsar himself”; he was lame or had lost a leg. The 4th-class cross was silver, but it was indeed presented by a member of the imperial family in the Tsar's name, so the tradition is nearly accurate.", "s": "family" } ] },
+    "maria": { "name": "Maria Simeonovna Bondarenko", "place": "Zaliman", "role": "great-great-grandmother", "bio": "Wife of Porfiry Vlasovich; mother of Anastasia, Andrey, Afanasy and Daniil." },
+    "ksenia": { "name": "Ksenia Vlasovna Bondarenko", "years": "b. 27 Jan 1903", "place": "Zaliman", "role": "daughter of Vlas Savelyevich", "facts": [ "Parish entry no. 7: DAKhO f. 40, op. 139, spr. 228." ] },
+    "matrona_v": { "name": "Matrona Vlasovna Bondarenko", "years": "recorded 1919", "place": "Zaliman", "role": "daughter of Vlas Savelyevich", "bio": "Named as a godmother in a 1919 entry.", "facts": [ { "t": "Parish register entry:", "q": "Власа Савелиева дочь девица Матрона", "tr": "Vlas Savelyev's daughter, the maiden Matrona" } ] },
+    "vlas": { "name": "Vlas Savelyevich Bondarenko", "years": "recorded 1903", "place": "Zaliman", "role": "3× great-grandfather, reserve soldier", "bio": "Father of the St George cavalier. The 1903 parish register lists him as a private, meaning a soldier of the reserve.", "facts": [ { "t": "Entry of 1903:", "q": "села Залимана рядовой", "tr": "private, of the village of Zaliman" }, "Wife: Darya Fyodorovna. Brother: Evgraf Savelyevich, also a private.", "Birth of daughter Ksenia: entry no. 7, 27 Jan 1903, DAKhO f. 40, op. 139, spr. 228." ] },
+    "daria": { "name": "Darya Fyodorovna Bondarenko", "years": "recorded 1903", "place": "Zaliman", "role": "3× great-grandmother", "bio": "Wife of Vlas Savelyevich, named in a 1903 parish entry." },
+    "evgraf": { "name": "Evgraf Savelyevich Bondarenko", "years": "recorded 1903", "place": "Zaliman", "role": "brother of Vlas, private", "bio": "Like his brother, he is called a private in the documents of 1903." },
+    "savely": { "name": "Savely Bondarenko", "years": "c. 1830s–40s", "place": "Zaliman", "role": "earliest known ancestor", "bio": "Father of Vlas and Evgraf, known from their patronymic.", "facts": [ { "t": "His dates are approximate.", "s": "probable" } ] }
+  },
+  "docs": {
+    "porfiry_nagrada": { "title": "Award list of the 12th Astrakhan Grenadier Regiment", "shelfmark": "RGVIA, f. 970 (His Imperial Majesty's Military Field Chancellery)" },
+    "porfiry_ranenie": { "title": "Casualty bureau card: wounded 21 Sep 1916", "shelfmark": "Casualty bureau card index, “Heroes of the Great War” portal" },
+    "vlas_1903": { "title": "Parish register: birth of Ksenia, 27 Jan 1903, no. 7", "shelfmark": "DAKhO, f. 40, op. 139, spr. 228" },
+    "anastasia_1918": { "title": "Parish register: birth of Anastasia, 13 Apr 1918, no. 16", "shelfmark": "DAKhO, f. 40, op. 139, spr. 372" },
+    "bliznecy_1919": { "title": "Parish register: birth of the twins, 30 Nov 1919, nos. 62–63", "shelfmark": "DAKhO, f. 40, op. 139, spr. 372" },
+    "smert_andrey_1919": { "title": "Parish register: death of the infant Andrey, December 1919", "shelfmark": "DAKhO, f. 40, op. 139, spr. 372" },
+    "daniil_foto": { "title": "Daniil Porfiryevich Bondarenko. Photograph", "shelfmark": "Family archive; confirmed by the compiler's mother" },
+    "daniil_nagradnoy": { "title": "Award sheet of 9 Oct 1944: Order of the Patriotic War, 2nd class", "shelfmark": "Pamyat Naroda" },
+    "berezhnoy_spisok": { "title": "N. O. Berezhnoy: roster of the 1342nd Anti-Aircraft Artillery Regiment", "shelfmark": "Pamyat Naroda" },
+    "berezhnoy_orden": { "title": "N. O. Berezhnoy: Order of the Patriotic War, 2nd class, 1985", "shelfmark": "Pamyat Naroda" },
+    "gerb": { "title": "Family coat of arms", "shelfmark": "Modern family emblem" }
+  },
+  "stories": {
+    "porfiry": {
+      "kicker": "Exhibition I", "title": "Porfiry Bondarenko", "subtitle": "St George cavalier from the village of Zaliman",
+      "plaque": [ { "k": "Award", "v": "St George Cross, 4th class" }, { "k": "Number", "v": "No. 734616" }, { "k": "Awarded", "v": "16 Nov 1916" } ],
+      "sections": [
+        { "year": "1903", "heading": "A reserve soldier's son", "text": "The Zaliman parish register calls his father, Vlas Savelyevich, a private. Service was already part of this family's life: Porfiry's uncle Evgraf is recorded as a private too.", "quote": { "q": "села Залимана рядовой", "tr": "private, of the village of Zaliman" }, "doc": "vlas_1903" },
+        { "year": "1916", "heading": "Grenadier of the Astrakhan Regiment", "text": "Porfiry serves in the 12th Astrakhan Grenadier Regiment of Emperor Alexander III. The records describe him briefly: Orthodox, married, Kharkov Governorate, Izyum district, Savintsy volost, village of Zaliman." },
+        { "year": "21 Sep 1916", "heading": "Wounded near Zaturtsy", "text": "In Volhynia, near the village of Zaturtsy, the grenadier is wounded. He is evacuated through the dressing unit of the Moscow exchange and merchant societies, as a casualty bureau card records.", "doc": "porfiry_ranenie" },
+        { "year": "16 Nov 1916", "heading": "Cross No. 734616", "text": "Singled out for particular distinction, Porfiry receives the St George Cross, 4th class, at a review. It is presented by Grand Duke George Mikhailovich. The award survives in the regimental list and in S. B. Patrikeev's consolidated lists of recipients.", "quote": { "q": "от Имени Государя Императора", "tr": "in the name of His Majesty the Emperor" }, "doc": "porfiry_nagrada" },
+        { "year": "Tradition", "kind": "legend", "heading": "“A gold cross, given by the Tsar himself”", "text": "The family said that the cross was gold and came from the Tsar himself, and that Porfiry was left lame or without a leg. A 4th-class cross was silver, but it was indeed presented by a member of the imperial family in the Tsar's name. Family memory proved nearly exact." },
+        { "year": "1918–1921", "heading": "Home in Zaliman", "text": "With Maria Simeonovna he raises children in his native village. Anastasia is born in 1918 and the twins Andrey and Afanasy in 1919; Andrey dies at two days old. Daniil, the future colonel, is born in 1921.", "doc": "anastasia_1918" }
+      ],
+      "family": [ "maria", "anastasia", "twin_andrey", "twin_afanasy", "daniil_b", "vlas" ]
+    },
+    "daniil": {
+      "kicker": "Exhibition II", "title": "Daniil Bondarenko", "subtitle": "Colonel, son of a St George cavalier",
+      "photo": "daniil_foto",
+      "plaque": [ { "k": "Born", "v": "21 Dec 1921, Zaliman" }, { "k": "In service", "v": "from 9 Dec 1939" }, { "k": "Rank", "v": "Colonel" } ],
+      "ladder_title": "Through the ranks", "ladder": [ "Lieutenant", "Senior Lieutenant", "Captain", "Major", "Colonel" ],
+      "sections": [
+        { "year": "1939–1940", "heading": "The first war", "text": "On 9 December 1939, shortly before turning eighteen, the son of the St George cavalier is drafted and takes part in the Soviet-Finnish War." },
+        { "year": "By 1944", "heading": "The Karelian Front", "text": "81st Rifle Regiment of the 54th Rifle Division, then the Kem Operational Group of the Karelian Front. By 1944 he is a major and senior assistant to the head of the section for applying war experience in the operations department of the 26th Army staff." },
+        { "year": "9 Oct 1944", "heading": "The award sheet", "text": "Order of the Patriotic War, 2nd class. With a radio station among units of the 205th Rifle Division he secured the army commander's control of the troops during the pursuit on the Kestenga axis; he also served as duty operations officer and compiled combat experience.", "doc": "daniil_nagradnoy" },
+        { "year": "Awards", "heading": "Two orders and a medal", "text": "Order of the Patriotic War, 2nd class; Order of the Patriotic War, 1st class; and the Medal “For Victory over Germany”." },
+        { "year": "Tradition", "kind": "legend", "heading": "Two parrots for Fidel", "text": "The family says that Daniil served in Kyiv, knew Fidel Castro and gave him two parrots. Castro did visit Kyiv in May 1963 and January 1964; the meeting itself has not yet been documented." },
+        { "year": "Heirs", "heading": "The line of service continues", "text": "According to the family, his son Evgeny became head of civil defence for Kharkiv and its region. A grenadier of 1916, a colonel, a head of civil defence: three generations of service." }
+      ],
+      "family": [ "porfiry", "anastasia", "evgeny", "zinaida" ]
+    }
+  },
+  "zaliman": {
+    "title": "Zaliman", "subtitle": "The family's home on the Siverskyi Donets",
+    "facts": [ { "k": "Founded", "v": "c. 1671" }, { "k": "Inhabitants", "v": "state peasants" }, { "k": "District", "v": "Izyum, Kharkov Governorate" }, { "k": "Volost", "v": "Savintsy" } ],
+    "paragraphs": [
+      "Zaliman was founded around 1671 on the bank of the Siverskyi Donets, opposite Savintsy. Its people were state peasants of the Izyum district in Kharkov Governorate.",
+      "The village later belonged to the Balakliia and then the Izium district of Kharkiv region. The Narozhnyis, Berezhnoys and Bondarenkos appear here side by side in the same parish registers."
+    ],
+    "estate_title": "Social estate",
+    "estate_text": "Documents of 1903 describe the people of Zaliman as state peasants; those of 1918–1919 as peasants of the settlement of Zaliman. No noble roots have been found.",
+    "estate_quote": { "q": "слободы Залимана крестьяне", "tr": "peasants of the settlement of Zaliman" },
+    "dynasty_title": "The family's strength is service",
+    "dynasty": [ { "k": "1916", "v": "Grenadier, St George cavalier" }, { "k": "1939–", "v": "Career officer, colonel" }, { "k": "Later", "v": "Head of civil defence" } ]
+  },
+  "gerb": {
+    "title": "Coat of arms", "motto": "Ad maiora natus", "motto_translation": "Born for greater things",
+    "symbols_title": "The symbols",
+    "symbols": [
+      { "k": "Blue shield", "v": "The field of the arms." },
+      { "k": "Silver rapier", "v": "Point upward: a sign of the family's military service." },
+      { "k": "Gold medallion with a black cross pattée", "v": "At the centre of the guard, in memory of Porfiry, the St George cavalier." },
+      { "k": "Gold sun", "v": "Above the blade." },
+      { "k": "Green hill", "v": "At the base: the native land of Sloboda Ukraine." },
+      { "k": "Tournament helm", "v": "Surmounts the shield." },
+      { "k": "Mantling", "v": "Blue and silver on the right, black and gold on the left: the colours of St George." },
+      { "k": "Crest", "v": "Two wings, blue and gold." }
+    ]
+  },
+  "sources": {
+    "title": "Sources", "subtitle": "Archives, publications and documents",
+    "list_title": "Archives and shelfmarks",
+    "list": [
+      { "k": "DAKhO (State Archive of Kharkiv Region)", "v": "F. 40, op. 139, spr. 228: Zaliman parish register 1903–1906; spr. 372: 1918–1919. Copies on Wikimedia Commons." },
+      { "k": "RGVIA (Russian State Military History Archive)", "v": "F. 970; f. 409, via the “Heroes of the Great War” portal." },
+      { "k": "S. B. Patrikeev", "v": "Consolidated lists of St George Cross holders, 1914–1922, vol. 11 (4th class, nos. 700001–800000)." },
+      { "k": "Pamyat Naroda (“Memory of the People”)", "v": "Public database of documents on the war of 1941–1945." },
+      { "k": "Revision of the “Cherkasy” of Izyum district, 1782", "v": "DAKhO, f. 31, op. 141, spr. 18." }
+    ],
+    "gallery_title": "All documents",
+    "namesake_title": "A namesake",
+    "namesake": "Ensign Gavriil Maksimovich Teslenko, 6th Finland Rifle Regiment, killed on 7 Sep 1915 near Zadvorniki and posthumously awarded the Order of St George, 4th class (Imperial order of 10 Jun 1916). No kinship has been established."
+  }
+}

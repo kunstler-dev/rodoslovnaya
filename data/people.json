@@ -1,0 +1,65 @@
+{
+  "root": "anton",
+  "lines": ["narozhny", "orlov", "teslenko", "yudkalo", "berezhny", "bondarenko"],
+  "people": [
+    { "id": "anton", "line": "narozhny", "living": true, "father": "andrey_n", "mother": "mother_t" },
+    { "id": "andrey_n", "line": "narozhny", "living": true, "father": "anatoly_o", "mother": "galina" },
+    { "id": "mother_t", "line": "teslenko", "living": true, "placeholderName": true, "father": "viktor", "mother": "anna_b" },
+
+    { "id": "anatoly_o", "line": "orlov", "living": true },
+    { "id": "galina", "line": "narozhny", "living": true, "father": "dmitry", "mother": "matrona_e" },
+    { "id": "dmitry", "line": "narozhny", "status": "family", "possibleFathers": ["afanasy_n", "ivan_n"] },
+    { "id": "matrona_e", "line": "narozhny", "status": "family" },
+
+    { "id": "ivan_n", "line": "narozhny", "status": "confirmed", "spouse": "fekla" },
+    { "id": "fekla", "line": "narozhny", "status": "confirmed" },
+    { "id": "timofey", "line": "narozhny", "status": "confirmed", "father": "ivan_n", "mother": "fekla" },
+    { "id": "pavel", "line": "narozhny", "status": "confirmed", "father": "ivan_n", "mother": "fekla" },
+    { "id": "afanasy_n", "line": "narozhny", "status": "confirmed", "spouse": "domna" },
+    { "id": "domna", "line": "narozhny", "status": "confirmed" },
+    { "id": "mikhail", "line": "narozhny", "status": "confirmed", "father": "afanasy_n", "mother": "domna" },
+
+    { "id": "viktor", "line": "teslenko", "living": true, "father": "andrey_d", "mother": "palageya" },
+    { "id": "andrey_d", "line": "teslenko", "status": "family", "father": "daniil_t" },
+    { "id": "stepan_t", "line": "teslenko", "status": "family", "father": "daniil_t" },
+    { "id": "daniil_t", "line": "teslenko", "status": "family" },
+
+    { "id": "palageya", "line": "yudkalo", "status": "family", "father": "filipp", "mother": "marina" },
+    { "id": "kirill", "line": "yudkalo", "status": "confirmed", "father": "filipp", "mother": "marina", "uncertainLink": true },
+    { "id": "filipp", "line": "yudkalo", "status": "family" },
+    { "id": "marina", "line": "yudkalo", "status": "family" },
+
+    { "id": "anna_b", "line": "berezhny", "living": true, "father": "nikolai_b", "mother": "anastasia" },
+    { "id": "nikolai_b", "line": "berezhny", "status": "confirmed", "docs": ["berezhnoy_spisok", "berezhnoy_orden"] },
+
+    { "id": "anastasia", "line": "bondarenko", "status": "confirmed", "father": "porfiry", "mother": "maria", "docs": ["anastasia_1918"] },
+    { "id": "twin_andrey", "line": "bondarenko", "status": "confirmed", "father": "porfiry", "mother": "maria", "docs": ["bliznecy_1919", "smert_andrey_1919"] },
+    { "id": "twin_afanasy", "line": "bondarenko", "status": "confirmed", "father": "porfiry", "mother": "maria", "docs": ["bliznecy_1919"] },
+    { "id": "daniil_b", "line": "bondarenko", "status": "confirmed", "father": "porfiry", "mother": "maria", "story": "daniil", "docs": ["daniil_foto", "daniil_nagradnoy"] },
+    { "id": "evgeny", "line": "bondarenko", "status": "family", "father": "daniil_b" },
+    { "id": "zinaida", "line": "bondarenko", "status": "family", "father": "daniil_b" },
+
+    { "id": "porfiry", "line": "bondarenko", "status": "confirmed", "father": "vlas", "mother": "daria", "story": "porfiry", "docs": ["porfiry_nagrada", "porfiry_ranenie", "anastasia_1918", "bliznecy_1919"] },
+    { "id": "maria", "line": "bondarenko", "status": "confirmed", "docs": ["anastasia_1918", "bliznecy_1919"] },
+    { "id": "ksenia", "line": "bondarenko", "status": "confirmed", "father": "vlas", "mother": "daria", "docs": ["vlas_1903"] },
+    { "id": "matrona_v", "line": "bondarenko", "status": "confirmed", "father": "vlas", "mother": "daria" },
+
+    { "id": "vlas", "line": "bondarenko", "status": "confirmed", "father": "savely", "docs": ["vlas_1903"] },
+    { "id": "daria", "line": "bondarenko", "status": "confirmed", "docs": ["vlas_1903"] },
+    { "id": "evgraf", "line": "bondarenko", "status": "confirmed", "father": "savely", "docs": ["vlas_1903"] },
+    { "id": "savely", "line": "bondarenko", "status": "probable" }
+  ],
+  "documents": [
+    { "id": "porfiry_nagrada", "file": "docs/porfiry_nagrada.png" },
+    { "id": "porfiry_ranenie", "file": "docs/porfiry_ranenie.png" },
+    { "id": "vlas_1903", "file": "docs/1903_vlas.jpg" },
+    { "id": "anastasia_1918", "file": "docs/1918_anastasia.jpg" },
+    { "id": "bliznecy_1919", "file": "docs/1919_bliznecy.jpg" },
+    { "id": "smert_andrey_1919", "file": "docs/1919_smert_andrey.jpg" },
+    { "id": "daniil_foto", "file": "docs/daniil_foto.jpg" },
+    { "id": "daniil_nagradnoy", "file": "docs/daniil_nagradnoy.png" },
+    { "id": "berezhnoy_spisok", "file": "docs/berezhnoy_spisok.png" },
+    { "id": "berezhnoy_orden", "file": "docs/berezhnoy_orden.png" },
+    { "id": "gerb", "file": "docs/gerb.png" }
+  ]
+}
