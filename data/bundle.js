@@ -1,4 +1,4 @@
-window.SITE_BUNDLE={"data":{
+window.APP_VERSION="7a5a16c509";window.SITE_BUNDLE={"data":{
   "root": "anton",
   "lines": ["narozhny", "orlov", "teslenko", "yudkalo", "berezhny", "bondarenko"],
   "people": [

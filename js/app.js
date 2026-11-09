@@ -8,6 +8,17 @@
   var data, texts = {}, lang = 'ru', byId = {}, docById = {}, extra = {}, tree = null, layout = null, route = null, treeShown = false, lastFocus = null;
   var $ = function (id) { return document.getElementById(id); };
 
+  /* Версия сайта для сброса кэша: её проставляет tools/update-bundle.bat */
+  var VERSION = (function () {
+    var m = document.querySelector('meta[name="app-version"]');
+    var v = (m && m.getAttribute('content')) || window.APP_VERSION || '';
+    return v === 'dev' ? '' : v;
+  })();
+  function vurl(u) {
+    if (!VERSION || !u || /^(?:[a-z]+:|\/\/)/i.test(u)) return u;
+    return u + (u.indexOf('?') >= 0 ? '&' : '?') + 'v=' + encodeURIComponent(VERSION);
+  }
+
   function store(key, value) {
     try {
       if (value === undefined) return localStorage.getItem(key);
@@ -39,14 +50,14 @@
     function fromBundle() {
       return new Promise(function (resolve, reject) {
         var s = document.createElement('script');
-        s.src = 'data/bundle.js';
+        s.src = vurl('data/bundle.js');
         s.onload = function () { resolve(window.SITE_BUNDLE); };
         s.onerror = reject;
         document.head.appendChild(s);
       });
     }
     if (location.protocol === 'file:') return fromBundle();
-    function json(u) { return fetch(u).then(function (r) { if (!r.ok) throw new Error(u); return r.json(); }); }
+    function json(u) { return fetch(vurl(u), { cache: 'no-cache' }).then(function (r) { if (!r.ok) throw new Error(u); return r.json(); }); }
     return Promise.all([json('data/people.json')].concat(LANGS.map(function (l) { return json('i18n/' + l[0] + '.json'); })))
       .then(function (all) {
         var i18n = {};
@@ -181,7 +192,7 @@
   function docFigure(id, list) {
     var d = docById[id], t = docText(id), pos = list.indexOf(id);
     return '<figure class="doc"><button type="button" class="doc-thumb" data-doc="' + id + '" data-list="' + list.join(',') + '" data-pos="' + pos + '" aria-label="' + esc(t.title) + '">' +
-      '<img src="' + esc(d.file) + '" alt="' + esc(t.title) + '" loading="lazy">' +
+      '<img src="' + esc(vurl(d.file)) + '" alt="' + esc(t.title) + '" loading="lazy">' +
       '<span class="doc-stub">' + CROSS + '<span>' + esc(ui('doc_pending')) + '</span><code>' + esc(d.file.replace('docs/', '')) + '</code></span>' +
       '</button><figcaption><b>' + esc(t.title) + '</b><span>' + esc(t.shelfmark) + '</span></figcaption></figure>';
   }
@@ -373,7 +384,7 @@
     if (im.doc) return docByIdSafe(im.doc) ? docFigure(im.doc, list) : '';
     var key = 'fact:' + f.id, pos = list.indexOf(key);
     return '<figure class="doc"><button type="button" class="doc-thumb" data-doc="' + key + '" data-list="' + list.join(',') + '" data-pos="' + pos + '" aria-label="' + esc(t.image || t.title) + '">' +
-      '<img src="' + esc(im.file) + '" alt="' + esc(t.image || t.title) + '" loading="lazy">' +
+      '<img src="' + esc(vurl(im.file)) + '" alt="' + esc(t.image || t.title) + '" loading="lazy">' +
       '<span class="doc-stub">' + CROSS + '<span>' + esc(ui('doc_pending')) + '</span><code>' + esc(im.file.replace('docs/', '')) + '</code></span>' +
       '</button><figcaption><b>' + esc(t.image || t.title) + '</b><span class="credit">' + imageCredit(im, t) + '</span></figcaption></figure>';
   }
@@ -381,7 +392,7 @@
   function portraitHtml(pr) {
     var t = portraitText(pr.id), key = 'portrait:' + pr.id;
     return '<figure class="portrait"><button type="button" class="portrait-thumb" data-doc="' + key + '" data-list="' + key + '" data-pos="0" aria-label="' + esc(t.name) + '">' +
-      '<img src="' + esc(pr.file) + '" alt="' + esc(t.name) + '" loading="lazy">' +
+      '<img src="' + esc(vurl(pr.file)) + '" alt="' + esc(t.name) + '" loading="lazy">' +
       '<span class="portrait-stub" aria-hidden="true">' + esc(initials(t)) + '</span></button>' +
       '<figcaption><b>' + esc(t.name) + '</b>' + (t.years ? '<span>' + esc(t.years) + '</span>' : '') + (t.note ? '<small>' + esc(t.note) + '</small>' : '') + '</figcaption></figure>';
   }
@@ -445,7 +456,7 @@
       stub.hidden = false;
       stub.innerHTML = CROSS + '<p>' + esc(ui('doc_pending')) + '</p><code>' + esc(it.file.replace('docs/', '')) + '</code>';
     };
-    img.src = it.file;
+    img.src = vurl(it.file);
     img.alt = it.title;
     $('lb-count').textContent = (lb.i + 1) + ' / ' + lb.list.length;
     $('lb-caption').innerHTML = esc(it.title) + (it.sub ? '<span>' + it.sub + '</span>' : '');
