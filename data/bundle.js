@@ -61,6 +61,19 @@ window.SITE_BUNDLE={"data":{
     { "id": "berezhnoy_spisok", "file": "docs/berezhnoy_spisok.png" },
     { "id": "berezhnoy_orden", "file": "docs/berezhnoy_orden.png" },
     { "id": "gerb", "file": "docs/gerb.png" }
+  ],
+  "facts": [
+    {"id": "izum_polk", "status": "probable", "image": {"file": "docs/facts/izum_donec_gerb.jpg", "author": "", "license": "PD", "source": "https://commons.wikimedia.org/wiki/File:Herb_Donec-Zacharzewskych.jpg"}},
+    {"id": "free_village", "status": "confirmed", "image": {"file": "docs/facts/izum_uezd_1788.jpg", "author": "", "license": "PD", "source": "https://commons.wikimedia.org/wiki/File:Карта_Изюмского_уезда_18_век.jpg", "resized": true}},
+    {"id": "flu_1918", "status": "confirmed", "image": {"doc": "anastasia_1918"}},
+    {"id": "georgy_crosses", "status": "confirmed", "image": {"file": "docs/facts/georgievsky_krest.jpg", "author": "Engelberthumperdink", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/", "source": "https://commons.wikimedia.org/wiki/File:Cross_of_St._George_(National_museum_of_Tatarstan).JPG", "resized": true}},
+    {"id": "astrakhan", "status": "confirmed", "image": {"file": "docs/facts/astrakhan_znamya_1797.jpg", "author": "Evostoryarchive", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/", "source": "https://commons.wikimedia.org/wiki/File:Polkovnik_Znamya_Astrakhanskiy_grenaderskiy_polki_1797.jpg"}, "portraits": [{"id": "aleksandr_iii", "file": "docs/facts/people/aleksandr_iii.jpg"}, {"id": "petr_i", "file": "docs/facts/people/petr_i.jpg"}]},
+    {"id": "romanov_cross", "status": "confirmed", "portraits": [{"id": "georgy_mikhailovich", "file": "docs/facts/people/georgy_mikhailovich.jpg"}, {"id": "nikolai_ii", "file": "docs/facts/people/nikolai_ii.jpg"}]},
+    {"id": "brusilov", "status": "confirmed", "image": {"file": "docs/facts/brusilov_map.jpg", "author": "Granat Encyclopedic Dictionary", "license": "PD", "source": "https://commons.wikimedia.org/wiki/File:Brusilov_offensive.jpg"}, "portraits": [{"id": "brusilov", "file": "docs/facts/people/brusilov.jpg"}]},
+    {"id": "daniil_staff", "status": "confirmed", "image": {"doc": "daniil_nagradnoy"}},
+    {"id": "castro", "status": "family", "image": {"file": "docs/facts/kiev_1961.jpg", "author": "Fortepan / Dobóczi Zsolt", "license": "CC BY-SA 3.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/", "source": "https://commons.wikimedia.org/wiki/File:Bohdan_Hmelnickij_sugárút_a_Hrescsatik_sugárút_felé_nézve._Fortepan_100681.jpg", "resized": true}, "portraits": [{"id": "castro", "file": "docs/facts/people/castro.jpg"}]},
+    {"id": "twins", "status": "confirmed", "image": {"doc": "bliznecy_1919"}},
+    {"id": "today", "status": "confirmed", "image": {"file": "docs/facts/donets_izum.jpg", "author": "Сергей Марцынюк", "license": "CC BY-SA 3.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/", "source": "https://commons.wikimedia.org/wiki/File:Северский_Донец_возле_Изюма_-_panoramio.jpg", "resized": true}}
   ]
 }
 ,"i18n":{"ru":{
@@ -75,7 +88,8 @@ window.SITE_BUNDLE={"data":{
     "no_docs": "Сканы к этой карточке пока не добавлены.", "living_note": "Сведения о ныне живущих родственниках на сайте не публикуются.",
     "doc_pending": "документ будет добавлен", "translation": "Перевод", "back_to_tree": "К древу",
     "rel_father": "отец", "rel_mother": "мать", "rel_possible": "возможный отец", "rel_spouse": "супруг(а)", "rel_child": "ребёнок", "rel_sibling": "брат / сестра",
-    "exhibit": "Экспонат", "family_section": "Семья", "footer": "Семейный архив. Сведения о живых людях ограничены именем и родством."
+    "exhibit": "Экспонат", "family_section": "Семья", "footer": "Семейный архив. Сведения о живых людях ограничены именем и родством.",
+    "nav_facts": "Интересные факты", "facts_source": "Источник", "facts_image": "Изображение", "facts_pd": "общественное достояние", "facts_unknown_author": "автор неизвестен", "facts_resized": "уменьшено", "facts_portrait_pending": "портрет будет добавлен"
   },
   "lines": { "narozhny": "Нарожные", "orlov": "Орловы", "teslenko": "Тесленко", "yudkalo": "Юдкало", "berezhny": "Бережные", "bondarenko": "Бондаренко" },
   "status": { "confirmed": "Подтверждено документом", "family": "Со слов семьи", "probable": "Вероятно, требует проверки" },
@@ -209,6 +223,31 @@ window.SITE_BUNDLE={"data":{
     "gallery_title": "Все документы",
     "namesake_title": "Однофамилец",
     "namesake": "Прапорщик Гавриил Максимович Тесленко, 6-й Финляндский стрелковый полк, погиб 7.09.1915 у д. Задворники, посмертно награждён орденом Св. Георгия IV ст. (ВП 10.06.1916). Родство не установлено."
+  },
+  "facts_page": {
+    "title": "Интересные факты", "subtitle": "Маленькие открытия из архивов и семейных преданий",
+    "note": "Иллюстрации взяты с Wikimedia Commons, автор и лицензия указаны под каждой картинкой. Сканы документов — из семейного архива и архивов, указанных в подписи.",
+    "items": {
+      "izum_polk": {"title": "Изюмский слободской полк и Донцы-Захаржевские", "text": "До 1765 года Залиман входил в Изюмский слободской казачий полк. Полк создали в 1685 году для защиты от набегов крымских татар, а к 1732 году в нём было 17 сотен. В первые десятилетия им командовали полковники из рода Донцов-Захаржевских, одного из самых знатных на Слобожанщине, поэтому предки-залиманцы того времени, скорее всего, служили под их началом, хотя прямого документа о конкретных предках нет. Род угас; в Харькове о нём напоминает улица Донец-Захаржевская.", "source": "Н. Гербель, «Изюмский слободской казачий полк. 1651–1765» (СПб., 1852); документов о конкретных предках нет", "image": "Герб рода Донец-Захаржевских"},
+      "free_village": {"title": "Вольное село без помещика", "text": "В ревизии «черкас» Изюмского уезда 1782 года у Залимана не указан владелец-помещик. В метрической книге 1903 года залиманцы прямо названы «государственными крестьянами». Значит, предки никогда не были крепостными.", "source": "ДАХО, ф. 31, оп. 141, спр. 18 (ревизия 1782 г.); ДАХО, ф. 40, оп. 139, спр. 228 (метрическая книга 1903 г.)", "image": "Карта Изюмского уезда из «Топографического описания Харьковского наместничества», 1788"},
+      "flu_1918": {"title": "Испанка 1918 года", "text": "По итоговой ведомости метрической книги, в 1918 году в Залимане родилось 144 ребёнка, было 73 свадьбы и умерло 97 человек — многие из-за эпидемии. Именно в этот год, 13 апреля, родилась прабабушка Анастасия Порфирьевна.", "source": "ДАХО, ф. 40, оп. 139, спр. 372 (итоговая ведомость за 1918 г.)"},
+      "georgy_crosses": {"title": "Более миллиона «Георгиев»", "text": "Солдатский Георгиевский крест был высшей наградой для нижних чинов. К ноябрю 1916 года им наградили около 1,37 миллиона человек. Среди них — гренадер Порфирий Бондаренко, крест IV степени № 734616.", "source": "Наградной список 12-го гренадерского Астраханского полка (РГВИА, ф. 970); сводные списки кавалеров С. Б. Патрикеева", "image": "Знак отличия Военного ордена (Георгиевский крест) IV степени, серебро. Национальный музей Республики Татарстан"},
+      "astrakhan": {"title": "Полк императора", "text": "Порфирий служил в 12-м гренадерском Астраханском полку — одном из старейших в русской армии: его сформировали в 1700 году при Петре I. Шефом полка был император Александр III, поэтому полк носил его имя.", "source": "«Военная энциклопедия» И. Д. Сытина, т. 3 (СПб., 1911), статья «Астраханский 12-й гренадерский, Императора Александра III, полк»", "image": "Полковничье знамя Астраханского гренадерского полка, 1797 (реконструкция)"},
+      "romanov_cross": {"title": "Крест из рук Романова", "text": "16 ноября 1916 года крест Порфирию вручил великий князь Георгий Михайлович — внук императора Николая I, объезжавший фронт от имени царствовавшего императора Николая II. Это два разных человека: Георгий Михайлович приходился двоюродным братом отцу Николая II, Александру III. Отсюда семейное предание «награду дал сам царь». Георгий Михайлович был известным коллекционером монет; в 1919 году его расстреляли большевики.", "source": "Наградной список 12-го гренадерского Астраханского полка (РГВИА, ф. 970): «от Имени Государя Императора»"},
+      "brusilov": {"title": "Брусиловский прорыв", "text": "Ранение Порфирия 21 сентября 1916 года у деревни Затурцы на Волыни пришлось на продолжение Брусиловского прорыва — одного из крупнейших наступлений Первой мировой войны.", "source": "Карточка бюро учёта потерь («Памяти героев Великой войны»)", "image": "Наступление Юго-Западного фронта летом 1916 года. Карта из энциклопедического словаря «Гранат»", "image_author": "Энциклопедический словарь «Гранат»"},
+      "daniil_staff": {"title": "Майор штаба армии в 1944 году", "text": "Даниил Порфирьевич (род. 1921) в 1939 году, незадолго до своего 18-летия, попал на советско-финскую войну, а в 1944 году был уже майором оперативного отдела штаба 26-й армии Карельского фронта. В наградном листе сказано, что он обеспечивал командарму связь с войсками, находясь с радиостанцией в частях 205-й стрелковой дивизии.", "source": "Наградной лист от 9.10.1944, «Память народа»"},
+      "castro": {"title": "Попугаи для Фиделя", "text": "Семейное предание гласит, что Даниил служил в Киеве и подарил Фиделю Кастро двух попугаев. Кастро действительно бывал в Киеве дважды — в мае 1963 и в январе 1964 года.", "source": "Семейное предание; даты визитов — по публикациям о поездках Ф. Кастро в СССР", "image": "Киев, 1961: вид с улицы Богдана Хмельницкого в сторону Крещатика"},
+      "twins": {"title": "Два брата-близнеца", "text": "30 ноября 1919 года у Порфирия и Марии родились близнецы Андрей и Афанасий. Андрей прожил всего два дня. Судьба Афанасия пока неизвестна.", "source": "ДАХО, ф. 40, оп. 139, спр. 372 (записи № 62–63)"},
+      "today": {"title": "Залиман сегодня", "text": "Село стоит на Северском Донце, напротив Савинцев. В 2022 году оно около месяца было под оккупацией и сильно разрушено.", "source": "Открытые сообщения СМИ, 2022", "image": "Северский Донец у Изюма, 2010"}
+    },
+    "portraits": {
+      "aleksandr_iii": {"name": "Александр III", "years": "1845–1894", "note": "шеф полка", "initials": "А III", "credit": ""},
+      "petr_i": {"name": "Пётр I", "years": "1672–1725", "note": "при нём сформирован полк", "initials": "П I", "credit": ""},
+      "georgy_mikhailovich": {"name": "Великий князь Георгий Михайлович", "years": "1863–1919", "note": "вручил крест Порфирию", "initials": "Г М", "credit": ""},
+      "nikolai_ii": {"name": "Николай II", "years": "1868–1918", "note": "крест вручён «от Имени Государя Императора»", "initials": "Н II", "credit": ""},
+      "brusilov": {"name": "Генерал А. А. Брусилов", "years": "1853–1926", "note": "командовал Юго-Западным фронтом", "initials": "А Б", "credit": ""},
+      "castro": {"name": "Фидель Кастро", "years": "1926–2016", "note": "бывал в Киеве в 1963 и 1964 годах", "initials": "Ф К", "credit": ""}
+    }
   }
 }
 ,"uk":{
@@ -223,7 +262,8 @@ window.SITE_BUNDLE={"data":{
     "no_docs": "Скани до цієї картки поки не додано.", "living_note": "Відомості про нині живих родичів на сайті не публікуються.",
     "doc_pending": "документ буде додано", "translation": "Переклад", "back_to_tree": "До древа",
     "rel_father": "батько", "rel_mother": "мати", "rel_possible": "можливий батько", "rel_spouse": "чоловік / дружина", "rel_child": "дитина", "rel_sibling": "брат / сестра",
-    "exhibit": "Експонат", "family_section": "Родина", "footer": "Сімейний архів. Відомості про живих людей обмежено ім'ям і спорідненістю."
+    "exhibit": "Експонат", "family_section": "Родина", "footer": "Сімейний архів. Відомості про живих людей обмежено ім'ям і спорідненістю.",
+    "nav_facts": "Цікаві факти", "facts_source": "Джерело", "facts_image": "Зображення", "facts_pd": "суспільне надбання", "facts_unknown_author": "автор невідомий", "facts_resized": "зменшено", "facts_portrait_pending": "портрет буде додано"
   },
   "lines": { "narozhny": "Нарожні", "orlov": "Орлови", "teslenko": "Тесленки", "yudkalo": "Юдкало", "berezhny": "Бережні", "bondarenko": "Бондаренки" },
   "status": { "confirmed": "Підтверджено документом", "family": "Зі слів родини", "probable": "Імовірно, потребує перевірки" },
@@ -357,6 +397,31 @@ window.SITE_BUNDLE={"data":{
     "gallery_title": "Усі документи",
     "namesake_title": "Однофамілець",
     "namesake": "Прапорщик Гавриїл Максимович Тесленко, 6-й Фінляндський стрілецький полк, загинув 7.09.1915 біля с. Задворники, посмертно нагороджений орденом Св. Георгія IV ст. (ВН 10.06.1916). Спорідненість не встановлено."
+  },
+  "facts_page": {
+    "title": "Цікаві факти", "subtitle": "Маленькі відкриття з архівів і родинних переказів",
+    "note": "Ілюстрації взято з Wikimedia Commons, автора й ліцензію вказано під кожним зображенням. Скани документів — із сімейного архіву та архівів, зазначених у підписі.",
+    "items": {
+      "izum_polk": {"title": "Ізюмський слобідський полк і Донці-Захаржевські", "text": "До 1765 року Заліман входив до Ізюмського слобідського козацького полку. Полк створили 1685 року для захисту від набігів кримських татар, а 1732 року в ньому було вже 17 сотень. У перші десятиліття ним командували полковники з роду Донців-Захаржевських, одного з найзнатніших на Слобожанщині, тож тодішні предки-заліманці, найімовірніше, служили під їхньою орудою, хоча прямого документа про конкретних предків немає. Рід згас; у Харкові про нього нагадує вулиця Донець-Захаржевська.", "source": "М. Гербель, «Изюмский слободской казачий полк. 1651–1765» (СПб., 1852); документів про конкретних предків немає", "image": "Герб роду Донців-Захаржевських"},
+      "free_village": {"title": "Вільне село без поміщика", "text": "У ревізії «черкас» Ізюмського повіту 1782 року в Залімана не вказано власника-поміщика. У метричній книзі 1903 року заліманці прямо названі «державними селянами». Отже, предки ніколи не були кріпаками.", "source": "ДАХО, ф. 31, оп. 141, спр. 18 (ревізія 1782 р.); ДАХО, ф. 40, оп. 139, спр. 228 (метрична книга 1903 р.)", "image": "Карта Ізюмського повіту з «Топографічного опису Харківського намісництва», 1788"},
+      "flu_1918": {"title": "Іспанка 1918 року", "text": "За підсумковою відомістю метричної книги, 1918 року в Залімані народилося 144 дитини, відбулося 73 весілля і померло 97 людей — багато хто через епідемію. Саме цього року, 13 квітня, народилася прабабуся Анастасія Порфирівна.", "source": "ДАХО, ф. 40, оп. 139, спр. 372 (підсумкова відомість за 1918 р.)"},
+      "georgy_crosses": {"title": "Понад мільйон «Георгіїв»", "text": "Солдатський Георгіївський хрест був найвищою нагородою для нижніх чинів. До листопада 1916 року ним нагородили близько 1,37 мільйона людей. Серед них — гренадер Порфирій Бондаренко, хрест IV ступеня № 734616.", "source": "Нагородний список 12-го гренадерського Астраханського полку (РДВІА, ф. 970); зведені списки кавалерів С. Б. Патрікеєва", "image": "Знак відзнаки Військового ордена (Георгіївський хрест) IV ступеня, срібло. Національний музей Республіки Татарстан"},
+      "astrakhan": {"title": "Полк імператора", "text": "Порфирій служив у 12-му гренадерському Астраханському полку — одному з найстаріших у російській армії: його сформували 1700 року за Петра I. Шефом полку був імператор Олександр III, тому полк носив його ім'я.", "source": "«Военная энциклопедия» І. Д. Ситіна, т. 3 (СПб., 1911), стаття про Астраханський 12-й гренадерський полк", "image": "Полковницький прапор Астраханського гренадерського полку, 1797 (реконструкція)"},
+      "romanov_cross": {"title": "Хрест із рук Романова", "text": "16 листопада 1916 року хрест Порфирію вручив великий князь Георгій Михайлович — онук імператора Миколи I, який об'їжджав фронт від імені імператора Миколи II, що тоді правив. Це дві різні людини: Георгій Михайлович був двоюрідним братом батька Миколи II, Олександра III. Звідси родинний переказ «нагороду дав сам цар». Георгій Михайлович був відомим колекціонером монет; 1919 року його розстріляли більшовики.", "source": "Нагородний список 12-го гренадерського Астраханського полку (РДВІА, ф. 970): «от Имени Государя Императора»"},
+      "brusilov": {"title": "Брусиловський прорив", "text": "Поранення Порфирія 21 вересня 1916 року біля села Затурці на Волині припало на продовження Брусиловського прориву — одного з найбільших наступів Першої світової війни.", "source": "Картка бюро обліку втрат («Памяти героев Великой войны»)", "image": "Наступ Південно-Західного фронту влітку 1916 року. Карта з енциклопедичного словника «Гранат»", "image_author": "Енциклопедичний словник «Гранат»"},
+      "daniil_staff": {"title": "Майор штабу армії 1944 року", "text": "Данило Порфирович (нар. 1921) 1939 року, незадовго до свого 18-річчя, потрапив на радянсько-фінську війну, а 1944 року вже був майором оперативного відділу штабу 26-ї армії Карельського фронту. У нагородному листі сказано, що він забезпечував командармові зв'язок із військами, перебуваючи з радіостанцією в частинах 205-ї стрілецької дивізії.", "source": "Нагородний лист від 9.10.1944, «Память народа»"},
+      "castro": {"title": "Папуги для Фіделя", "text": "За родинним переказом, Данило служив у Києві й подарував Фіделю Кастро двох папуг. Кастро справді бував у Києві двічі — у травні 1963 і в січні 1964 року.", "source": "Родинний переказ; дати візитів — за публікаціями про поїздки Ф. Кастро до СРСР", "image": "Київ, 1961: вигляд з вулиці Богдана Хмельницького в бік Хрещатика"},
+      "twins": {"title": "Два брати-близнюки", "text": "30 листопада 1919 року в Порфирія і Марії народилися близнюки Андрій та Афанасій. Андрій прожив лише два дні. Доля Афанасія поки невідома.", "source": "ДАХО, ф. 40, оп. 139, спр. 372 (записи № 62–63)"},
+      "today": {"title": "Заліман сьогодні", "text": "Село стоїть на Сіверському Дінці, навпроти Савинців. 2022 року воно близько місяця було під окупацією і зазнало значних руйнувань.", "source": "Відкриті повідомлення ЗМІ, 2022", "image": "Сіверський Донець біля Ізюма, 2010"}
+    },
+    "portraits": {
+      "aleksandr_iii": {"name": "Олександр III", "years": "1845–1894", "note": "шеф полку", "initials": "О III", "credit": ""},
+      "petr_i": {"name": "Петро I", "years": "1672–1725", "note": "за нього сформовано полк", "initials": "П I", "credit": ""},
+      "georgy_mikhailovich": {"name": "Великий князь Георгій Михайлович", "years": "1863–1919", "note": "вручив хрест Порфирію", "initials": "Г М", "credit": ""},
+      "nikolai_ii": {"name": "Микола II", "years": "1868–1918", "note": "хрест вручено «від Імені Государя Імператора»", "initials": "М II", "credit": ""},
+      "brusilov": {"name": "Генерал О. О. Брусилов", "years": "1853–1926", "note": "командував Південно-Західним фронтом", "initials": "О Б", "credit": ""},
+      "castro": {"name": "Фідель Кастро", "years": "1926–2016", "note": "бував у Києві 1963 і 1964 року", "initials": "Ф К", "credit": ""}
+    }
   }
 }
 ,"en":{
@@ -371,7 +436,8 @@ window.SITE_BUNDLE={"data":{
     "no_docs": "No scans have been added to this card yet.", "living_note": "Details of living relatives are not published on this site.",
     "doc_pending": "document to be added", "translation": "Translation", "back_to_tree": "Back to the tree",
     "rel_father": "father", "rel_mother": "mother", "rel_possible": "possible father", "rel_spouse": "spouse", "rel_child": "child", "rel_sibling": "sibling",
-    "exhibit": "Exhibit", "family_section": "Family", "footer": "Family archive. Information on living people is limited to name and relationship."
+    "exhibit": "Exhibit", "family_section": "Family", "footer": "Family archive. Information on living people is limited to name and relationship.",
+    "nav_facts": "Curious facts", "facts_source": "Source", "facts_image": "Image", "facts_pd": "public domain", "facts_unknown_author": "unknown author", "facts_resized": "resized", "facts_portrait_pending": "portrait to be added"
   },
   "lines": { "narozhny": "Narozhnyi", "orlov": "Orlov", "teslenko": "Teslenko", "yudkalo": "Yudkalo", "berezhny": "Berezhnoy", "bondarenko": "Bondarenko" },
   "status": { "confirmed": "Confirmed by a document", "family": "According to the family", "probable": "Probable, needs checking" },
@@ -505,6 +571,31 @@ window.SITE_BUNDLE={"data":{
     "gallery_title": "All documents",
     "namesake_title": "A namesake",
     "namesake": "Ensign Gavriil Maksimovich Teslenko, 6th Finland Rifle Regiment, killed on 7 Sep 1915 near Zadvorniki and posthumously awarded the Order of St George, 4th class (Imperial order of 10 Jun 1916). No kinship has been established."
+  },
+  "facts_page": {
+    "title": "Curious facts", "subtitle": "Small discoveries from the archives and family lore",
+    "note": "Illustrations come from Wikimedia Commons; the author and licence are given under each image. Document scans come from the family archive and the archives named in the captions.",
+    "items": {
+      "izum_polk": {"title": "The Izyum Sloboda Regiment and the Donets-Zakharzhevskys", "text": "Until 1765 Zaliman belonged to the Izyum Sloboda Cossack Regiment. The regiment was formed in 1685 to defend against Crimean Tatar raids, and by 1732 it had 17 companies (sotnias). In its first decades it was led by colonels of the Donets-Zakharzhevsky family, one of the most distinguished in Sloboda Ukraine, so the Zaliman ancestors of that time most likely served under them, although no document names specific ancestors. The family has died out; Donets-Zakharzhevska Street in Kharkiv still recalls it.", "source": "N. Gerbel, 'The Izyum Sloboda Cossack Regiment, 1651–1765' (St Petersburg, 1852); no document on specific ancestors", "image": "Coat of arms of the Donets-Zakharzhevsky family"},
+      "free_village": {"title": "A free village without a landlord", "text": "In the 1782 census of the 'Cherkasy' (Cossack settlers) of the Izyum district, Zaliman has no landowner. The 1903 parish register explicitly calls its people 'state peasants'. So the ancestors were never serfs.", "source": "DAKhO, f. 31, op. 141, spr. 18 (1782 census); DAKhO, f. 40, op. 139, spr. 228 (1903 parish register)", "image": "Map of the Izyum district from the 'Topographic Description of the Kharkov Viceroyalty', 1788"},
+      "flu_1918": {"title": "The Spanish flu of 1918", "text": "According to the annual summary of the parish register, 144 children were born in Zaliman in 1918, 73 weddings took place and 97 people died, many of them in the epidemic. It was in this year, on 13 April, that great-grandmother Anastasia Porfiryevna was born.", "source": "DAKhO, f. 40, op. 139, spr. 372 (summary for 1918)"},
+      "georgy_crosses": {"title": "More than a million 'Georges'", "text": "The soldiers' St George Cross was the highest award for the lower ranks. By November 1916 about 1.37 million men had received it. Among them was the grenadier Porfiry Bondarenko: Cross, 4th class, No. 734616.", "source": "Award list of the 12th Astrakhan Grenadier Regiment (RGVIA, f. 970); S. B. Patrikeev's consolidated lists of recipients", "image": "Insignia of the Military Order (St George Cross), 4th class, silver. National Museum of the Republic of Tatarstan"},
+      "astrakhan": {"title": "The Emperor's regiment", "text": "Porfiry served in the 12th Astrakhan Grenadier Regiment, one of the oldest in the Russian army: it was formed in 1700 under Peter I. Its colonel-in-chief was Emperor Alexander III, so the regiment bore his name.", "source": "Sytin's 'Military Encyclopedia', vol. 3 (St Petersburg, 1911), article on the 12th Astrakhan Grenadier Regiment", "image": "Colonel's standard of the Astrakhan Grenadier Regiment, 1797 (reconstruction)"},
+      "romanov_cross": {"title": "A cross from a Romanov's hands", "text": "On 16 November 1916 the cross was presented to Porfiry by Grand Duke George Mikhailovich, a grandson of Emperor Nicholas I, who was touring the front on behalf of the reigning Emperor Nicholas II. They were two different people: the Grand Duke was a cousin of Nicholas II's father, Alexander III. Hence the family story that 'the Tsar himself gave the award'. George Mikhailovich was a noted coin collector; in 1919 he was shot by the Bolsheviks.", "source": "Award list of the 12th Astrakhan Grenadier Regiment (RGVIA, f. 970): 'in the name of His Majesty the Emperor'"},
+      "brusilov": {"title": "The Brusilov Offensive", "text": "Porfiry was wounded on 21 September 1916 near the village of Zaturtsy in Volhynia, during the later stage of the Brusilov Offensive, one of the largest offensives of the First World War.", "source": "Card of the casualty registration bureau ('In Memory of the Heroes of the Great War')", "image": "Offensive of the South-Western Front, summer 1916. Map from the Granat Encyclopedic Dictionary", "image_author": "Granat Encyclopedic Dictionary"},
+      "daniil_staff": {"title": "An army staff major in 1944", "text": "Daniil Porfiryevich (born 1921) went to the Soviet-Finnish War in 1939, shortly before turning eighteen, and by 1944 he was a major in the operations department of the 26th Army staff on the Karelian Front. His award sheet says that, with a radio station among units of the 205th Rifle Division, he kept the army commander in contact with the troops.", "source": "Award sheet of 9 Oct 1944, 'Memory of the People' database"},
+      "castro": {"title": "Parrots for Fidel", "text": "Family lore says that Daniil served in Kyiv and gave Fidel Castro two parrots. Castro really did visit Kyiv twice, in May 1963 and in January 1964.", "source": "Family lore; visit dates from publications on Fidel Castro's trips to the USSR", "image": "Kyiv, 1961: view from Bohdan Khmelnytsky Street towards Khreshchatyk"},
+      "twins": {"title": "Twin brothers", "text": "On 30 November 1919 Porfiry and Maria had twins, Andrey and Afanasy. Andrey lived only two days. Afanasy's fate is still unknown.", "source": "DAKhO, f. 40, op. 139, spr. 372 (entries no. 62–63)"},
+      "today": {"title": "Zaliman today", "text": "The village stands on the Siverskyi Donets, opposite Savintsy. In 2022 it was under occupation for about a month and was badly damaged.", "source": "Open media reports, 2022", "image": "The Siverskyi Donets near Izium, 2010"}
+    },
+    "portraits": {
+      "aleksandr_iii": {"name": "Alexander III", "years": "1845–1894", "note": "colonel-in-chief of the regiment", "initials": "A III", "credit": ""},
+      "petr_i": {"name": "Peter I", "years": "1672–1725", "note": "the regiment was formed under him", "initials": "P I", "credit": ""},
+      "georgy_mikhailovich": {"name": "Grand Duke George Mikhailovich", "years": "1863–1919", "note": "presented the cross to Porfiry", "initials": "G M", "credit": ""},
+      "nikolai_ii": {"name": "Nicholas II", "years": "1868–1918", "note": "the cross was given 'in the name of the Emperor'", "initials": "N II", "credit": ""},
+      "brusilov": {"name": "General Aleksei Brusilov", "years": "1853–1926", "note": "commanded the South-Western Front", "initials": "A B", "credit": ""},
+      "castro": {"name": "Fidel Castro", "years": "1926–2016", "note": "visited Kyiv in 1963 and 1964", "initials": "F C", "credit": ""}
+    }
   }
 }
 ,"de":{
@@ -519,7 +610,8 @@ window.SITE_BUNDLE={"data":{
     "no_docs": "Zu dieser Karte wurden noch keine Scans hinzugefügt.", "living_note": "Angaben zu lebenden Verwandten werden auf dieser Website nicht veröffentlicht.",
     "doc_pending": "Dokument folgt", "translation": "Übersetzung", "back_to_tree": "Zum Stammbaum",
     "rel_father": "Vater", "rel_mother": "Mutter", "rel_possible": "möglicher Vater", "rel_spouse": "Ehepartner", "rel_child": "Kind", "rel_sibling": "Geschwister",
-    "exhibit": "Exponat", "family_section": "Familie", "footer": "Familienarchiv. Angaben zu lebenden Personen beschränken sich auf Name und Verwandtschaft."
+    "exhibit": "Exponat", "family_section": "Familie", "footer": "Familienarchiv. Angaben zu lebenden Personen beschränken sich auf Name und Verwandtschaft.",
+    "nav_facts": "Interessante Fakten", "facts_source": "Quelle", "facts_image": "Bild", "facts_pd": "gemeinfrei", "facts_unknown_author": "unbekannter Urheber", "facts_resized": "verkleinert", "facts_portrait_pending": "Porträt folgt"
   },
   "lines": { "narozhny": "Narozhnyi", "orlov": "Orlow", "teslenko": "Teslenko", "yudkalo": "Judkalo", "berezhny": "Bereschnoi", "bondarenko": "Bondarenko" },
   "status": { "confirmed": "Durch Dokument belegt", "family": "Nach Angaben der Familie", "probable": "Wahrscheinlich, noch zu prüfen" },
@@ -653,6 +745,31 @@ window.SITE_BUNDLE={"data":{
     "gallery_title": "Alle Dokumente",
     "namesake_title": "Ein Namensvetter",
     "namesake": "Fähnrich Gawriil Maximowitsch Teslenko, 6. Finnländisches Schützenregiment, gefallen am 7.09.1915 bei Sadworniki, postum mit dem St.-Georgs-Orden IV. Klasse ausgezeichnet (Höchster Befehl vom 10.06.1916). Eine Verwandtschaft ist nicht festgestellt."
+  },
+  "facts_page": {
+    "title": "Interessante Fakten", "subtitle": "Kleine Entdeckungen aus Archiven und Familienüberlieferung",
+    "note": "Die Abbildungen stammen aus Wikimedia Commons; Urheber und Lizenz stehen unter jedem Bild. Die Dokumentenscans stammen aus dem Familienarchiv und den in der Bildunterschrift genannten Archiven.",
+    "items": {
+      "izum_polk": {"title": "Das Isjumer Sloboda-Regiment und die Donez-Sacharschewskis", "text": "Bis 1765 gehörte Saliman zum Isjumer Sloboda-Kosakenregiment. Das Regiment wurde 1685 zum Schutz vor Überfällen der Krimtataren aufgestellt und zählte 1732 bereits 17 Hundertschaften (Sotnien). In den ersten Jahrzehnten führten es Obristen aus dem Geschlecht Donez-Sacharschewski, einem der vornehmsten der Sloboda-Ukraine; die damaligen Vorfahren aus Saliman dienten daher höchstwahrscheinlich unter ihrem Befehl, auch wenn kein Dokument konkrete Vorfahren nennt. Das Geschlecht ist erloschen; in Charkiw erinnert die Donez-Sacharschewski-Straße daran.", "source": "N. Gerbel, „Das Isjumer Sloboda-Kosakenregiment 1651–1765“ (St. Petersburg 1852); keine Dokumente zu konkreten Vorfahren", "image": "Wappen des Geschlechts Donez-Sacharschewski"},
+      "free_village": {"title": "Ein freies Dorf ohne Gutsherrn", "text": "In der Revision der „Tscherkassen“ (Kosakensiedler) des Kreises Isjum von 1782 ist für Saliman kein Gutsbesitzer verzeichnet. Im Kirchenbuch von 1903 werden die Einwohner ausdrücklich „Staatsbauern“ genannt. Die Vorfahren waren also nie Leibeigene.", "source": "DAChO, F. 31, Op. 141, Spr. 18 (Revision 1782); DAChO, F. 40, Op. 139, Spr. 228 (Kirchenbuch 1903)", "image": "Karte des Kreises Isjum aus der „Topographischen Beschreibung der Statthalterschaft Charkow“, 1788"},
+      "flu_1918": {"title": "Die Spanische Grippe 1918", "text": "Laut Jahresübersicht des Kirchenbuchs wurden 1918 in Saliman 144 Kinder geboren, 73 Hochzeiten gefeiert, und 97 Menschen starben – viele an der Epidemie. Genau in diesem Jahr, am 13. April, wurde Urgroßmutter Anastassija Porfirjewna geboren.", "source": "DAChO, F. 40, Op. 139, Spr. 372 (Jahresübersicht 1918)"},
+      "georgy_crosses": {"title": "Über eine Million „Georgs“", "text": "Das Georgskreuz für Soldaten war die höchste Auszeichnung für Mannschaften und Unteroffiziere. Bis November 1916 erhielten es rund 1,37 Millionen Mann. Einer von ihnen war der Grenadier Porfyrij Bondarenko: Kreuz IV. Klasse Nr. 734616.", "source": "Auszeichnungsliste des 12. Astrachaner Grenadierregiments (RGVIA, F. 970); Sammellisten von S. B. Patrikejew", "image": "Ehrenzeichen des Militärordens (Georgskreuz) IV. Klasse, Silber. Nationalmuseum der Republik Tatarstan"},
+      "astrakhan": {"title": "Das Regiment des Kaisers", "text": "Porfyrij diente im 12. Astrachaner Grenadierregiment, einem der ältesten der russischen Armee: Es wurde 1700 unter Peter I. aufgestellt. Chef des Regiments war Kaiser Alexander III., daher trug es seinen Namen.", "source": "Sytins „Militärenzyklopädie“, Bd. 3 (St. Petersburg 1911), Artikel über das 12. Astrachaner Grenadierregiment", "image": "Oberstenfahne des Astrachaner Grenadierregiments, 1797 (Rekonstruktion)"},
+      "romanov_cross": {"title": "Ein Kreuz aus der Hand eines Romanows", "text": "Am 16. November 1916 überreichte Großfürst Georgi Michailowitsch, ein Enkel Kaiser Nikolaus’ I., Porfyrij das Kreuz; er bereiste die Front im Namen des regierenden Kaisers Nikolaus II. Es sind zwei verschiedene Personen: Der Großfürst war ein Cousin von Alexander III., dem Vater Nikolaus’ II. Daher stammt die Familienüberlieferung, „der Zar selbst“ habe die Auszeichnung verliehen. Georgi Michailowitsch war ein bekannter Münzsammler; 1919 wurde er von den Bolschewiki erschossen.", "source": "Auszeichnungsliste des 12. Astrachaner Grenadierregiments (RGVIA, F. 970): „im Namen Seiner Majestät des Kaisers“"},
+      "brusilov": {"title": "Die Brussilow-Offensive", "text": "Porfyrij wurde am 21. September 1916 beim Dorf Saturzy in Wolhynien verwundet – in der späten Phase der Brussilow-Offensive, einer der größten Offensiven des Ersten Weltkriegs.", "source": "Karteikarte des Büros für Verlusterfassung („Gedenken an die Helden des Großen Krieges“)", "image": "Offensive der Südwestfront im Sommer 1916. Karte aus dem Enzyklopädischen Wörterbuch „Granat“", "image_author": "Enzyklopädisches Wörterbuch „Granat“"},
+      "daniil_staff": {"title": "Major im Armeestab 1944", "text": "Daniil Porfirjewitsch (geb. 1921) kam 1939, kurz vor seinem 18. Geburtstag, in den sowjetisch-finnischen Krieg und war 1944 bereits Major in der Operationsabteilung im Stab der 26. Armee der Karelischen Front. Im Auszeichnungsblatt heißt es, er habe mit einer Funkstation bei Einheiten der 205. Schützendivision die Verbindung des Armeebefehlshabers zu den Truppen gesichert.", "source": "Auszeichnungsblatt vom 9.10.1944, Datenbank „Gedächtnis des Volkes“"},
+      "castro": {"title": "Papageien für Fidel", "text": "Laut Familienüberlieferung diente Daniil in Kiew und schenkte Fidel Castro zwei Papageien. Castro war tatsächlich zweimal in Kiew – im Mai 1963 und im Januar 1964.", "source": "Familienüberlieferung; Besuchsdaten nach Veröffentlichungen über Castros Reisen in die UdSSR", "image": "Kiew 1961: Blick von der Bohdan-Chmelnyzkyj-Straße zum Chreschtschatyk"},
+      "twins": {"title": "Zwei Zwillingsbrüder", "text": "Am 30. November 1919 bekamen Porfyrij und Marija die Zwillinge Andrej und Afanassi. Andrej lebte nur zwei Tage. Das Schicksal Afanassis ist noch unbekannt.", "source": "DAChO, F. 40, Op. 139, Spr. 372 (Einträge Nr. 62–63)"},
+      "today": {"title": "Saliman heute", "text": "Das Dorf liegt am Siwerskyj Donez gegenüber von Sawinzy. 2022 war es etwa einen Monat lang besetzt und wurde schwer zerstört.", "source": "Öffentliche Medienberichte, 2022", "image": "Der Siwerskyj Donez bei Isjum, 2010"}
+    },
+    "portraits": {
+      "aleksandr_iii": {"name": "Alexander III.", "years": "1845–1894", "note": "Chef des Regiments", "initials": "A III", "credit": ""},
+      "petr_i": {"name": "Peter I.", "years": "1672–1725", "note": "unter ihm wurde das Regiment aufgestellt", "initials": "P I", "credit": ""},
+      "georgy_mikhailovich": {"name": "Großfürst Georgi Michailowitsch", "years": "1863–1919", "note": "überreichte Porfyrij das Kreuz", "initials": "G M", "credit": ""},
+      "nikolai_ii": {"name": "Nikolaus II.", "years": "1868–1918", "note": "das Kreuz wurde „im Namen des Kaisers“ verliehen", "initials": "N II", "credit": ""},
+      "brusilov": {"name": "General A. A. Brussilow", "years": "1853–1926", "note": "befehligte die Südwestfront", "initials": "A B", "credit": ""},
+      "castro": {"name": "Fidel Castro", "years": "1926–2016", "note": "war 1963 und 1964 in Kiew", "initials": "F C", "credit": ""}
+    }
   }
 }
 }};

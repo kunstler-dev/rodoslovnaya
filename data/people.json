@@ -61,5 +61,18 @@
     { "id": "berezhnoy_spisok", "file": "docs/berezhnoy_spisok.png" },
     { "id": "berezhnoy_orden", "file": "docs/berezhnoy_orden.png" },
     { "id": "gerb", "file": "docs/gerb.png" }
+  ],
+  "facts": [
+    {"id": "izum_polk", "status": "probable", "image": {"file": "docs/facts/izum_donec_gerb.jpg", "author": "", "license": "PD", "source": "https://commons.wikimedia.org/wiki/File:Herb_Donec-Zacharzewskych.jpg"}},
+    {"id": "free_village", "status": "confirmed", "image": {"file": "docs/facts/izum_uezd_1788.jpg", "author": "", "license": "PD", "source": "https://commons.wikimedia.org/wiki/File:Карта_Изюмского_уезда_18_век.jpg", "resized": true}},
+    {"id": "flu_1918", "status": "confirmed", "image": {"doc": "anastasia_1918"}},
+    {"id": "georgy_crosses", "status": "confirmed", "image": {"file": "docs/facts/georgievsky_krest.jpg", "author": "Engelberthumperdink", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/", "source": "https://commons.wikimedia.org/wiki/File:Cross_of_St._George_(National_museum_of_Tatarstan).JPG", "resized": true}},
+    {"id": "astrakhan", "status": "confirmed", "image": {"file": "docs/facts/astrakhan_znamya_1797.jpg", "author": "Evostoryarchive", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/", "source": "https://commons.wikimedia.org/wiki/File:Polkovnik_Znamya_Astrakhanskiy_grenaderskiy_polki_1797.jpg"}, "portraits": [{"id": "aleksandr_iii", "file": "docs/facts/people/aleksandr_iii.jpg"}, {"id": "petr_i", "file": "docs/facts/people/petr_i.jpg"}]},
+    {"id": "romanov_cross", "status": "confirmed", "portraits": [{"id": "georgy_mikhailovich", "file": "docs/facts/people/georgy_mikhailovich.jpg"}, {"id": "nikolai_ii", "file": "docs/facts/people/nikolai_ii.jpg"}]},
+    {"id": "brusilov", "status": "confirmed", "image": {"file": "docs/facts/brusilov_map.jpg", "author": "Granat Encyclopedic Dictionary", "license": "PD", "source": "https://commons.wikimedia.org/wiki/File:Brusilov_offensive.jpg"}, "portraits": [{"id": "brusilov", "file": "docs/facts/people/brusilov.jpg"}]},
+    {"id": "daniil_staff", "status": "confirmed", "image": {"doc": "daniil_nagradnoy"}},
+    {"id": "castro", "status": "family", "image": {"file": "docs/facts/kiev_1961.jpg", "author": "Fortepan / Dobóczi Zsolt", "license": "CC BY-SA 3.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/", "source": "https://commons.wikimedia.org/wiki/File:Bohdan_Hmelnickij_sugárút_a_Hrescsatik_sugárút_felé_nézve._Fortepan_100681.jpg", "resized": true}, "portraits": [{"id": "castro", "file": "docs/facts/people/castro.jpg"}]},
+    {"id": "twins", "status": "confirmed", "image": {"doc": "bliznecy_1919"}},
+    {"id": "today", "status": "confirmed", "image": {"file": "docs/facts/donets_izum.jpg", "author": "Сергей Марцынюк", "license": "CC BY-SA 3.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/", "source": "https://commons.wikimedia.org/wiki/File:Северский_Донец_возле_Изюма_-_panoramio.jpg", "resized": true}}
   ]
 }

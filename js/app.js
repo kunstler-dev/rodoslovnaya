@@ -5,7 +5,7 @@
   var LANGS = [['ru', 'RU'], ['uk', 'UA'], ['en', 'EN'], ['de', 'DE']];
   var CROSS = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 11 8.5 2.5Q12 3.6 15.5 2.5ZM13 12 21.5 8.5Q20.4 12 21.5 15.5ZM12 13 15.5 21.5Q12 20.4 8.5 21.5ZM11 12 2.5 15.5Q3.6 12 2.5 8.5Z"/></svg>';
 
-  var data, texts = {}, lang = 'ru', byId = {}, docById = {}, tree = null, layout = null, route = null, treeShown = false, lastFocus = null;
+  var data, texts = {}, lang = 'ru', byId = {}, docById = {}, extra = {}, tree = null, layout = null, route = null, treeShown = false, lastFocus = null;
   var $ = function (id) { return document.getElementById(id); };
 
   function store(key, value) {
@@ -78,7 +78,7 @@
     $('langs').innerHTML = LANGS.map(function (l) {
       return '<button type="button" data-lang="' + l[0] + '" aria-pressed="' + (l[0] === lang) + '">' + l[1] + '</button>';
     }).join('');
-    var items = [['tree', '#/tree'], ['porfiry', '#/story/porfiry'], ['daniil', '#/story/daniil'], ['zaliman', '#/zaliman'], ['gerb', '#/gerb'], ['sources', '#/sources']];
+    var items = [['tree', '#/tree'], ['porfiry', '#/story/porfiry'], ['daniil', '#/story/daniil'], ['zaliman', '#/zaliman'], ['gerb', '#/gerb'], ['facts', '#/facts'], ['sources', '#/sources']];
     $('nav').innerHTML = items.map(function (n) {
       return '<a data-nav="' + n[0] + '" href="' + n[1] + '">' + esc(ui('nav_' + n[0])) + '</a>';
     }).join('');
@@ -94,7 +94,7 @@
     var name = parts[0] || 'tree';
     if (name === 'person' && byId[parts[1]]) return { view: 'tree', person: parts[1] };
     if (name === 'story' && section('stories')[parts[1]]) return { view: 'story', story: parts[1] };
-    if (['zaliman', 'gerb', 'sources'].indexOf(name) >= 0) return { view: name };
+    if (['zaliman', 'gerb', 'facts', 'sources'].indexOf(name) >= 0) return { view: name };
     return { view: 'tree' };
   }
 
@@ -107,12 +107,14 @@
       var key = route.view === 'story' ? route.story : route.view;
       a.classList.toggle('active', a.getAttribute('data-nav') === key);
     });
+    var nav = $('nav'), act = nav.querySelector('.active');
+    if (act && nav.scrollWidth > nav.clientWidth) nav.scrollLeft = act.offsetLeft - (nav.clientWidth - act.offsetWidth) / 2;
     if (force || !sameView) {
       if (route.view === 'tree') renderTree();
       else {
         treeShown = false;
         tree = null;
-        $('view').innerHTML = route.view === 'story' ? storyPage(route.story) : route.view === 'zaliman' ? zalimanPage() : route.view === 'gerb' ? gerbPage() : sourcesPage();
+        $('view').innerHTML = route.view === 'story' ? storyPage(route.story) : route.view === 'zaliman' ? zalimanPage() : route.view === 'gerb' ? gerbPage() : route.view === 'facts' ? factsPage() : sourcesPage();
         bindImages($('view'));
         window.scrollTo(0, 0);
       }
@@ -186,6 +188,16 @@
   function bindImages(root) {
     root.querySelectorAll('.doc-thumb img').forEach(function (img) {
       function miss() { img.closest('.doc').classList.add('missing'); }
+      if (img.complete && !img.naturalWidth) miss();
+      img.addEventListener('error', miss);
+    });
+    root.querySelectorAll('.portrait-thumb img').forEach(function (img) {
+      function miss() {
+        var fig = img.closest('.portrait'), btn = fig.querySelector('.portrait-thumb');
+        fig.classList.add('missing');
+        btn.disabled = true;
+        btn.title = ui('facts_portrait_pending');
+      }
       if (img.complete && !img.naturalWidth) miss();
       img.addEventListener('error', miss);
     });
@@ -333,6 +345,79 @@
       '</div>' + footer();
   }
 
+  /* Интересные факты */
+  function factsSection() { return section('facts_page') || {}; }
+  function factText(id) {
+    var base = (texts.ru.facts_page || {}).items || {}, local = (dict().facts_page || {}).items || {};
+    return Object.assign({}, base[id], local[id]);
+  }
+  function portraitText(id) {
+    var base = (texts.ru.facts_page || {}).portraits || {}, local = (dict().facts_page || {}).portraits || {};
+    return Object.assign({}, base[id], local[id]);
+  }
+  function initials(t) {
+    if (t.initials) return t.initials;
+    return String(t.name || '?').split(/\s+/).filter(Boolean).map(function (w) { return w.charAt(0); }).slice(0, 2).join('').toUpperCase();
+  }
+  function link(url, text) {
+    return url ? '<a href="' + esc(url) + '" target="_blank" rel="noopener">' + esc(text) + '</a>' : esc(text);
+  }
+  function imageCredit(im, t) {
+    var author = t.image_author || im.author || ui('facts_unknown_author');
+    var lic = im.license === 'PD' ? ui('facts_pd') : im.license;
+    return esc(ui('facts_image')) + ': ' + esc(author) + ' · ' + link(im.licenseUrl, lic) + ' · ' + link(im.source, 'Wikimedia Commons') +
+      (im.resized ? ' · ' + esc(ui('facts_resized')) : '');
+  }
+  function factFigure(f, t, list) {
+    var im = f.image;
+    if (im.doc) return docByIdSafe(im.doc) ? docFigure(im.doc, list) : '';
+    var key = 'fact:' + f.id, pos = list.indexOf(key);
+    return '<figure class="doc"><button type="button" class="doc-thumb" data-doc="' + key + '" data-list="' + list.join(',') + '" data-pos="' + pos + '" aria-label="' + esc(t.image || t.title) + '">' +
+      '<img src="' + esc(im.file) + '" alt="' + esc(t.image || t.title) + '" loading="lazy">' +
+      '<span class="doc-stub">' + CROSS + '<span>' + esc(ui('doc_pending')) + '</span><code>' + esc(im.file.replace('docs/', '')) + '</code></span>' +
+      '</button><figcaption><b>' + esc(t.image || t.title) + '</b><span class="credit">' + imageCredit(im, t) + '</span></figcaption></figure>';
+  }
+  function docByIdSafe(id) { return !!docById[id]; }
+  function portraitHtml(pr) {
+    var t = portraitText(pr.id), key = 'portrait:' + pr.id;
+    return '<figure class="portrait"><button type="button" class="portrait-thumb" data-doc="' + key + '" data-list="' + key + '" data-pos="0" aria-label="' + esc(t.name) + '">' +
+      '<img src="' + esc(pr.file) + '" alt="' + esc(t.name) + '" loading="lazy">' +
+      '<span class="portrait-stub" aria-hidden="true">' + esc(initials(t)) + '</span></button>' +
+      '<figcaption><b>' + esc(t.name) + '</b>' + (t.years ? '<span>' + esc(t.years) + '</span>' : '') + (t.note ? '<small>' + esc(t.note) + '</small>' : '') + '</figcaption></figure>';
+  }
+  function factsPage() {
+    var s = factsSection(), facts = data.facts || [], list = [];
+    extra = {};
+    facts.forEach(function (f) {
+      var t = factText(f.id);
+      if (f.image && f.image.doc && docById[f.image.doc]) list.push(f.image.doc);
+      else if (f.image && f.image.file) {
+        list.push('fact:' + f.id);
+        extra['fact:' + f.id] = { file: f.image.file, title: t.image || t.title, sub: imageCredit(f.image, t) };
+      }
+      (f.portraits || []).forEach(function (pr) {
+        var pt = portraitText(pr.id);
+        extra['portrait:' + pr.id] = { file: pr.file, title: pt.name + (pt.years ? ' (' + pt.years + ')' : ''),
+          sub: esc([pt.note, pt.credit].filter(Boolean).join(' · ')) };
+      });
+    });
+    var legend = ['confirmed', 'family', 'probable'].map(statusPill).join('');
+    var html = '<div class="page facts-page">' + pageHead(s.title, s.subtitle) +
+      '<div class="facts-legend" aria-label="' + esc(ui('legend_status')) + '">' + legend + '</div><ol class="fact-list">';
+    facts.forEach(function (f, i) {
+      var t = factText(f.id), fig = f.image ? factFigure(f, t, list) : '', prs = f.portraits || [];
+      html += '<li class="fact-card' + (fig ? ' has-img' : '') + (f.status === 'family' ? ' legend-ex' : '') + '" id="fact-' + f.id + '"><div class="fact-body">' +
+        '<span class="doc-label">' + esc(ui('exhibit')) + ' ' + (i + 1) + '</span>' +
+        '<h2>' + esc(t.title) + '</h2><p>' + esc(t.text) + '</p>' +
+        statusPill(f.status) +
+        (t.source ? '<p class="fact-source"><b>' + esc(ui('facts_source')) + ':</b> ' + esc(t.source) + '</p>' : '') +
+        (prs.length ? '<div class="portraits">' + prs.map(portraitHtml).join('') + '</div>' : '') +
+        '</div>' + (fig ? '<div class="fact-fig">' + fig + '</div>' : '') + '</li>';
+    });
+    html += '</ol>' + (s.note ? '<p class="namesake">' + esc(s.note) + '</p>' : '') + '</div>' + footer();
+    return html;
+  }
+
   /* Просмотр документа на весь экран */
   var lb = { list: [], i: 0, s: 1, x: 0, y: 0, ok: false, opener: null };
   function lbTransform() {
@@ -343,8 +428,13 @@
     if (lb.s === 1) { lb.x = 0; lb.y = 0; }
     lbTransform();
   }
+  function lbItem(id) {
+    if (extra[id]) return extra[id];
+    var d = docById[id] || { file: '' }, t = docText(id);
+    return { file: d.file, title: t.title, sub: esc(t.shelfmark) };
+  }
   function lbShow() {
-    var id = lb.list[lb.i], d = docById[id], t = docText(id), img = $('lb-img'), stub = $('lb-stub');
+    var id = lb.list[lb.i], it = lbItem(id), img = $('lb-img'), stub = $('lb-stub');
     lb.s = 1; lb.x = 0; lb.y = 0; lb.ok = true;
     lbTransform();
     img.hidden = false;
@@ -353,12 +443,12 @@
       lb.ok = false;
       img.hidden = true;
       stub.hidden = false;
-      stub.innerHTML = CROSS + '<p>' + esc(ui('doc_pending')) + '</p><code>' + esc(d.file.replace('docs/', '')) + '</code>';
+      stub.innerHTML = CROSS + '<p>' + esc(ui('doc_pending')) + '</p><code>' + esc(it.file.replace('docs/', '')) + '</code>';
     };
-    img.src = d.file;
-    img.alt = t.title;
+    img.src = it.file;
+    img.alt = it.title;
     $('lb-count').textContent = (lb.i + 1) + ' / ' + lb.list.length;
-    $('lb-caption').innerHTML = esc(t.title) + '<span>' + esc(t.shelfmark) + '</span>';
+    $('lb-caption').innerHTML = esc(it.title) + (it.sub ? '<span>' + it.sub + '</span>' : '');
     var many = lb.list.length > 1;
     document.querySelector('.lb-prev').hidden = !many;
     document.querySelector('.lb-next').hidden = !many;
