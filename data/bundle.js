@@ -1,4 +1,4 @@
-window.APP_VERSION="7a5a16c509";window.SITE_BUNDLE={"data":{
+window.APP_VERSION="e7184d444e";window.SITE_BUNDLE={"data":{
   "root": "anton",
   "lines": ["narozhny", "orlov", "teslenko", "yudkalo", "berezhny", "bondarenko"],
   "people": [
@@ -60,7 +60,7 @@ window.APP_VERSION="7a5a16c509";window.SITE_BUNDLE={"data":{
     { "id": "daniil_nagradnoy", "file": "docs/daniil_nagradnoy.png" },
     { "id": "berezhnoy_spisok", "file": "docs/berezhnoy_spisok.png" },
     { "id": "berezhnoy_orden", "file": "docs/berezhnoy_orden.png" },
-    { "id": "gerb", "file": "docs/gerb.png" }
+    { "id": "gerb", "file": "docs/gerb.jpg" }
   ],
   "facts": [
     {"id": "izum_polk", "status": "probable", "image": {"file": "docs/facts/izum_donec_gerb.jpg", "author": "", "license": "PD", "source": "https://commons.wikimedia.org/wiki/File:Herb_Donec-Zacharzewskych.jpg"}},

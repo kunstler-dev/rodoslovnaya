@@ -60,7 +60,7 @@
     { "id": "daniil_nagradnoy", "file": "docs/daniil_nagradnoy.png" },
     { "id": "berezhnoy_spisok", "file": "docs/berezhnoy_spisok.png" },
     { "id": "berezhnoy_orden", "file": "docs/berezhnoy_orden.png" },
-    { "id": "gerb", "file": "docs/gerb.png" }
+    { "id": "gerb", "file": "docs/gerb.jpg" }
   ],
   "facts": [
     {"id": "izum_polk", "status": "probable", "image": {"file": "docs/facts/izum_donec_gerb.jpg", "author": "", "license": "PD", "source": "https://commons.wikimedia.org/wiki/File:Herb_Donec-Zacharzewskych.jpg"}},
