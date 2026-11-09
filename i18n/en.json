@@ -122,14 +122,14 @@
     "title": "Coat of arms", "motto": "Ad maiora natus", "motto_translation": "Born for greater things",
     "symbols_title": "The symbols",
     "symbols": [
-      { "k": "Blue shield", "v": "The field of the arms." },
-      { "k": "Silver rapier", "v": "Point upward: a sign of the family's military service." },
-      { "k": "Gold medallion with a black cross pattée", "v": "At the centre of the guard, in memory of Porfiry, the St George cavalier." },
-      { "k": "Gold sun", "v": "Above the blade." },
+      { "k": "Blue shield with a gold border", "v": "The field of the arms." },
+      { "k": "Gold sun", "v": "With radiating rays, in the upper part of the shield above the blade." },
+      { "k": "Silver sword", "v": "Point upward, running the length of the shield: a sign of the family's military service." },
+      { "k": "Gold guard with a medallion", "v": "At its centre a black cross pattée, in memory of Porfiry, the St George cavalier." },
       { "k": "Green hill", "v": "At the base: the native land of Sloboda Ukraine." },
-      { "k": "Tournament helm", "v": "Surmounts the shield." },
-      { "k": "Mantling", "v": "Blue and silver on the right, black and gold on the left: the colours of St George." },
-      { "k": "Crest", "v": "Two wings, blue and gold." }
+      { "k": "Knight's helm", "v": "Steel, with a closed visor, surmounting the shield." },
+      { "k": "Mantling", "v": "Blue and silver on the viewer's left, black and gold on the right: the colours of St George." },
+      { "k": "Crest", "v": "A plume of blue, silver, black and gold feathers, in the colours of the mantling." }
     ]
   },
   "sources": {

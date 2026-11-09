@@ -1,4 +1,4 @@
-window.APP_VERSION="e7184d444e";window.SITE_BUNDLE={"data":{
+window.APP_VERSION="ca633b2b25";window.SITE_BUNDLE={"data":{
   "root": "anton",
   "lines": ["narozhny", "orlov", "teslenko", "yudkalo", "berezhny", "bondarenko"],
   "people": [
@@ -200,14 +200,14 @@ window.APP_VERSION="e7184d444e";window.SITE_BUNDLE={"data":{
     "title": "Герб", "motto": "Ad maiora natus", "motto_translation": "Рождён для большего",
     "symbols_title": "Расшифровка символов",
     "symbols": [
-      { "k": "Синий щит", "v": "Поле герба." },
-      { "k": "Серебряная рапира", "v": "Остриём вверх: знак воинской службы рода." },
-      { "k": "Золотой медальон с чёрным лапчатым крестом", "v": "В центре гарды, в память о Порфирии, георгиевском кавалере." },
-      { "k": "Золотое солнце", "v": "Над клинком." },
+      { "k": "Синий щит с золотой каймой", "v": "Поле герба." },
+      { "k": "Золотое солнце", "v": "С расходящимися лучами, в верхней части щита над клинком." },
+      { "k": "Серебряный меч", "v": "Остриём вверх, через весь щит: знак воинской службы рода." },
+      { "k": "Золотая гарда с медальоном", "v": "В центре гарды чёрный лапчатый крест, в память о Порфирии, георгиевском кавалере." },
       { "k": "Зелёный холм", "v": "Внизу щита: родная земля Слобожанщины." },
-      { "k": "Турнирный шлем", "v": "Венчает щит." },
-      { "k": "Намёт", "v": "Справа сине-серебряный, слева чёрно-золотой: георгиевские цвета." },
-      { "k": "Нашлемник", "v": "Два крыла, синее и золотое." }
+      { "k": "Рыцарский шлем", "v": "Стальной, с закрытым забралом, венчает щит." },
+      { "k": "Намёт", "v": "Слева от зрителя сине-серебряный, справа чёрно-золотой: георгиевские цвета." },
+      { "k": "Нашлемник", "v": "Плюмаж из синих, серебряных, чёрных и золотых перьев, в цветах намёта." }
     ]
   },
   "sources": {
@@ -374,14 +374,14 @@ window.APP_VERSION="e7184d444e";window.SITE_BUNDLE={"data":{
     "title": "Герб", "motto": "Ad maiora natus", "motto_translation": "Народжений для більшого",
     "symbols_title": "Значення символів",
     "symbols": [
-      { "k": "Синій щит", "v": "Поле герба." },
-      { "k": "Срібна рапіра", "v": "Вістрям угору: знак військової служби роду." },
-      { "k": "Золотий медальйон із чорним лапчастим хрестом", "v": "У центрі гарди, на згадку про Порфирія, георгіївського кавалера." },
-      { "k": "Золоте сонце", "v": "Над клинком." },
+      { "k": "Синій щит із золотою облямівкою", "v": "Поле герба." },
+      { "k": "Золоте сонце", "v": "Із променями, у верхній частині щита над клинком." },
+      { "k": "Срібний меч", "v": "Вістрям угору, через увесь щит: знак військової служби роду." },
+      { "k": "Золота гарда з медальйоном", "v": "У центрі гарди чорний лапчастий хрест, на згадку про Порфирія, георгіївського кавалера." },
       { "k": "Зелений пагорб", "v": "Унизу щита: рідна земля Слобожанщини." },
-      { "k": "Турнірний шолом", "v": "Вінчає щит." },
-      { "k": "Намет", "v": "Праворуч синьо-срібний, ліворуч чорно-золотий: георгіївські кольори." },
-      { "k": "Нашоломник", "v": "Два крила, синє й золоте." }
+      { "k": "Лицарський шолом", "v": "Сталевий, із закритим забралом, вінчає щит." },
+      { "k": "Намет", "v": "Ліворуч від глядача синьо-срібний, праворуч чорно-золотий: георгіївські кольори." },
+      { "k": "Нашоломник", "v": "Плюмаж із синіх, срібних, чорних і золотих пер, у кольорах намету." }
     ]
   },
   "sources": {
@@ -548,14 +548,14 @@ window.APP_VERSION="e7184d444e";window.SITE_BUNDLE={"data":{
     "title": "Coat of arms", "motto": "Ad maiora natus", "motto_translation": "Born for greater things",
     "symbols_title": "The symbols",
     "symbols": [
-      { "k": "Blue shield", "v": "The field of the arms." },
-      { "k": "Silver rapier", "v": "Point upward: a sign of the family's military service." },
-      { "k": "Gold medallion with a black cross pattée", "v": "At the centre of the guard, in memory of Porfiry, the St George cavalier." },
-      { "k": "Gold sun", "v": "Above the blade." },
+      { "k": "Blue shield with a gold border", "v": "The field of the arms." },
+      { "k": "Gold sun", "v": "With radiating rays, in the upper part of the shield above the blade." },
+      { "k": "Silver sword", "v": "Point upward, running the length of the shield: a sign of the family's military service." },
+      { "k": "Gold guard with a medallion", "v": "At its centre a black cross pattée, in memory of Porfiry, the St George cavalier." },
       { "k": "Green hill", "v": "At the base: the native land of Sloboda Ukraine." },
-      { "k": "Tournament helm", "v": "Surmounts the shield." },
-      { "k": "Mantling", "v": "Blue and silver on the right, black and gold on the left: the colours of St George." },
-      { "k": "Crest", "v": "Two wings, blue and gold." }
+      { "k": "Knight's helm", "v": "Steel, with a closed visor, surmounting the shield." },
+      { "k": "Mantling", "v": "Blue and silver on the viewer's left, black and gold on the right: the colours of St George." },
+      { "k": "Crest", "v": "A plume of blue, silver, black and gold feathers, in the colours of the mantling." }
     ]
   },
   "sources": {
@@ -722,14 +722,14 @@ window.APP_VERSION="e7184d444e";window.SITE_BUNDLE={"data":{
     "title": "Wappen", "motto": "Ad maiora natus", "motto_translation": "Zu Größerem geboren",
     "symbols_title": "Die Symbole",
     "symbols": [
-      { "k": "Blauer Schild", "v": "Das Wappenfeld." },
-      { "k": "Silbernes Rapier", "v": "Mit der Spitze nach oben: Zeichen des Militärdienstes der Familie." },
-      { "k": "Goldenes Medaillon mit schwarzem Tatzenkreuz", "v": "In der Mitte des Korbs, zum Gedenken an den Georgsritter Porfyrij." },
-      { "k": "Goldene Sonne", "v": "Über der Klinge." },
+      { "k": "Blauer Schild mit goldenem Rand", "v": "Das Wappenfeld." },
+      { "k": "Goldene Sonne", "v": "Mit Strahlen, im oberen Teil des Schildes über der Klinge." },
+      { "k": "Silbernes Schwert", "v": "Mit der Spitze nach oben, über den ganzen Schild: Zeichen des Militärdienstes der Familie." },
+      { "k": "Goldene Parierstange mit Medaillon", "v": "In der Mitte ein schwarzes Tatzenkreuz, zum Gedenken an den Georgsritter Porfyrij." },
       { "k": "Grüner Hügel", "v": "Am Schildfuß: die Heimaterde der Sloboda-Ukraine." },
-      { "k": "Turnierhelm", "v": "Krönt den Schild." },
-      { "k": "Helmdecke", "v": "Rechts blau-silbern, links schwarz-golden: die Georgsfarben." },
-      { "k": "Helmzier", "v": "Zwei Flügel, blau und golden." }
+      { "k": "Ritterhelm", "v": "Aus Stahl, mit geschlossenem Visier, krönt den Schild." },
+      { "k": "Helmdecke", "v": "Vom Betrachter aus links blau-silbern, rechts schwarz-golden: die Georgsfarben." },
+      { "k": "Helmzier", "v": "Ein Federbusch in Blau, Silber, Schwarz und Gold, in den Farben der Helmdecke." }
     ]
   },
   "sources": {

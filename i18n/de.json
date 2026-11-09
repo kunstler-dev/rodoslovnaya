@@ -122,14 +122,14 @@
     "title": "Wappen", "motto": "Ad maiora natus", "motto_translation": "Zu Größerem geboren",
     "symbols_title": "Die Symbole",
     "symbols": [
-      { "k": "Blauer Schild", "v": "Das Wappenfeld." },
-      { "k": "Silbernes Rapier", "v": "Mit der Spitze nach oben: Zeichen des Militärdienstes der Familie." },
-      { "k": "Goldenes Medaillon mit schwarzem Tatzenkreuz", "v": "In der Mitte des Korbs, zum Gedenken an den Georgsritter Porfyrij." },
-      { "k": "Goldene Sonne", "v": "Über der Klinge." },
+      { "k": "Blauer Schild mit goldenem Rand", "v": "Das Wappenfeld." },
+      { "k": "Goldene Sonne", "v": "Mit Strahlen, im oberen Teil des Schildes über der Klinge." },
+      { "k": "Silbernes Schwert", "v": "Mit der Spitze nach oben, über den ganzen Schild: Zeichen des Militärdienstes der Familie." },
+      { "k": "Goldene Parierstange mit Medaillon", "v": "In der Mitte ein schwarzes Tatzenkreuz, zum Gedenken an den Georgsritter Porfyrij." },
       { "k": "Grüner Hügel", "v": "Am Schildfuß: die Heimaterde der Sloboda-Ukraine." },
-      { "k": "Turnierhelm", "v": "Krönt den Schild." },
-      { "k": "Helmdecke", "v": "Rechts blau-silbern, links schwarz-golden: die Georgsfarben." },
-      { "k": "Helmzier", "v": "Zwei Flügel, blau und golden." }
+      { "k": "Ritterhelm", "v": "Aus Stahl, mit geschlossenem Visier, krönt den Schild." },
+      { "k": "Helmdecke", "v": "Vom Betrachter aus links blau-silbern, rechts schwarz-golden: die Georgsfarben." },
+      { "k": "Helmzier", "v": "Ein Federbusch in Blau, Silber, Schwarz und Gold, in den Farben der Helmdecke." }
     ]
   },
   "sources": {
